@@ -42,6 +42,15 @@ def _location_text(row: pd.Series, cols: ColumnMap) -> str:
     return ", ".join(parts)
 
 
+def _site_name(row: pd.Series, cols: ColumnMap, i: int) -> str:
+    """The name column if there is one, else the location text (often a name or address)."""
+    for role in ("name", "location"):
+        col = cols.get(role)
+        if col and pd.notna(row.get(col)) and str(row.get(col)).strip():
+            return str(row.get(col)).strip()
+    return f"Row {i + 2}"
+
+
 def screen(sites: pd.DataFrame, ref: ReferenceData, cfg: dict,
            columns: ColumnMap | None = None) -> ScreeningResult:
     cols = columns or detect_columns(sites)
@@ -49,7 +58,7 @@ def screen(sites: pd.DataFrame, ref: ReferenceData, cfg: dict,
     records, problems = [], []
 
     for i, row in sites.iterrows():
-        name = str(row.get(cols.get("name"), "") or f"Row {i + 2}")
+        name = _site_name(row, cols, i)
         loc = locate_row(row, cols, ref.postcode_lookup)
         given = _location_text(row, cols)
         if loc.issue:

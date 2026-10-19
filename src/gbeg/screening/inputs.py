@@ -34,6 +34,8 @@ ROLE_PATTERNS: dict[str, list[str]] = {
 
 POSTCODE = re.compile(r"^([A-Z]{1,2}\d[A-Z\d]?)\s*(\d[A-Z]{2})$")
 GRIDREF = re.compile(r"^[A-HJ-Z]{2}\s*\d+(\s*\d+)?$")
+# A postcode inside longer text, such as an address.
+POSTCODE_IN_TEXT = re.compile(r"\b([A-Z]{1,2}\d[A-Z\d]?)\s*(\d[A-Z]{2})\b")
 PAIR = re.compile(r"^\s*(-?\d+(?:\.\d+)?)\s*[,;/ ]\s*(-?\d+(?:\.\d+)?)\s*$")
 
 
@@ -179,8 +181,25 @@ def locate_row(row: pd.Series, cols: ColumnMap, postcode_lookup=None) -> Located
                            "grid reference")
     except InvalidLocationError as exc:
         return Located(issue=str(exc))
+    # A "location" cell may hold a site name or address rather than a location, so when it
+    # cannot be read, fall back to the postcode column, then to a postcode inside the text.
+    issues: list[str] = []
     if val("location"):
-        return parse_text_location(val("location"), postcode_lookup)
+        found = parse_text_location(val("location"), postcode_lookup)
+        if not found.issue:
+            return found
+        issues.append(found.issue)
     if val("postcode"):
-        return _postcode(val("postcode"), postcode_lookup)
-    return Located(issue="No location given")
+        found = _postcode(val("postcode"), postcode_lookup)
+        if not found.issue:
+            return found
+        issues.append(found.issue)
+    if val("location"):
+        embedded = POSTCODE_IN_TEXT.search(" ".join(str(val("location")).upper().split()))
+        if embedded:
+            found = _postcode(embedded.group(0), postcode_lookup)
+            if not found.issue:
+                return found
+            if found.issue not in issues:
+                issues.append(found.issue)
+    return Located(issue="; ".join(issues) or "No location given")

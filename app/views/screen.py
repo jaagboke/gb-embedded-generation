@@ -101,7 +101,9 @@ if use_example:
 file_key = hashlib.md5(raw).hexdigest()[:10]
 
 st.caption(f"{len(sites)} rows read from {source_name}. Location can be a postcode, OS grid "
-           "reference, easting and northing, or latitude and longitude.")
+           "reference, easting and northing, or latitude and longitude. If a Location column "
+           "holds site names or addresses, the Postcode column (or a postcode in the "
+           "address) is used instead.")
 
 detected = detect_columns(sites)
 with st.expander("Check how your columns were read", expanded=False):

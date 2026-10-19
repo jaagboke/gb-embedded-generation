@@ -234,3 +234,19 @@ def test_excel_report(reference):
     assert wb["Not screened"].cell(2, 2).value == "Nowhere"
     items = {r[0].value: r[1].value for r in wb["Assumptions"].iter_rows(min_row=2)}
     assert "BS 4142" in items["Status"]
+
+
+def test_location_and_postcode_columns_only():
+    """A Location column holding names or addresses falls back to the postcode."""
+    from gbeg.screening.inputs import locate_row
+
+    lookup = {"BL11AP": (371951, 409081), "WN11AA": (358016, 405780)}.get
+    df = pd.DataFrame({"Location": ["Bolton Depot", "SJ 838 980", "12 High St, Wigan WN1 1AA",
+                                    "Nowhere Farm"],
+                       "Postcode": ["BL1 1AP", "M1 1AA", "", "ZZ9 9ZZ"]})
+    cols = detect_columns(df)
+    assert cols.get("location") == "Location" and cols.get("postcode") == "Postcode"
+    got = [locate_row(r, cols, lookup) for _, r in df.iterrows()]
+    assert [g.method for g in got[:3]] == ["postcode", "grid reference", "postcode"]
+    assert got[0].easting == 371951 and got[2].easting == 358016
+    assert "Nowhere Farm" in got[3].issue and "ZZ9 9ZZ not found" in got[3].issue
