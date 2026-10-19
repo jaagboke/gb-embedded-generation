@@ -1,0 +1,63 @@
+# Source registry.
+# `url` values marked verified: false must be confirmed against the publisher's page
+# before the first ingest run. Publishers move files; the loader records exactly what it
+# downloaded in a manifest so every run is traceable.
+
+sources:
+  repd:
+    name: Renewable Energy Planning Database
+    publisher: Department for Energy Security and Net Zero
+    landing_page: https://www.gov.uk/government/publications/renewable-energy-planning-database-monthly-extract
+    url: null              # file link changes each release; download from landing page
+    verified: true         # Q2 2026 extract loaded 2026-10-13
+    licence: Open Government Licence v3.0
+    refresh: quarterly     # file named REPD_Publication_Q2_2026
+
+  ecr_spen:
+    name: SP Energy Networks Embedded Capacity Register
+    publisher: SP Energy Networks
+    landing_page: https://www.spenergynetworks.co.uk/pages/embedded_capacity_register.aspx
+    url: null              # Open Data Portal requires registration; may need manual download
+    verified: false
+    licence: check portal terms
+    refresh: monthly
+
+  ecr_enwl:
+    name: Electricity North West Embedded Capacity Register (>=1MW and <1MW parts)
+    publisher: Electricity North West
+    landing_page: https://electricitynorthwest.opendatasoft.com
+    url: null              # Opendatasoft export, semicolon-separated
+    verified: false
+    licence: check portal terms
+    refresh: monthly
+
+  ons_ruc_2021:
+    name: Rural Urban Classification (2021) of Output Areas in England and Wales
+    publisher: Office for National Statistics
+    landing_page: https://www.data.gov.uk/dataset/output-areas-december-2021-boundaries-ew-bfe-v9-and-rural-urban-classification
+    url: null
+    verified: false
+    licence: Open Government Licence v3.0
+    refresh: static
+    phase: 2
+
+  defra_noise_round4:
+    name: Strategic noise mapping round 4 (road and rail), England
+    publisher: Defra
+    landing_page: https://www.gov.uk/government/publications/strategic-noise-mapping-2022
+    url: null
+    verified: false
+    licence: Open Government Licence v3.0
+    refresh: static
+    phase: 2
+    notes: England only. Welsh sites need the Welsh Government maps or are flagged.
+
+  os_open_uprn:
+    name: OS Open UPRN
+    publisher: Ordnance Survey
+    landing_page: https://www.ordnancesurvey.co.uk/products/os-open-uprn
+    url: null
+    verified: false
+    licence: Open Government Licence v3.0
+    refresh: quarterly
+    phase: 2

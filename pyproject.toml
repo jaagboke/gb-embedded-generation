@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gbeg"
+version = "0.1.0"
+description = "GB Embedded Generation Register: harmonised DNO ECRs and REPD with rural/urban screening"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "duckdb>=1.0",
+    "openpyxl>=3.1",
+    "pandas>=2.2",
+    "pyproj>=3.6",
+    "pyarrow>=14",
+    "pyyaml>=6.0",
+    "rapidfuzz>=3.0",
+    "requests>=2.32",
+    "scipy>=1.11",
+    "shapely>=2.0",
+    "streamlit>=1.39",
+    "pydeck>=0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "geopandas>=1.0", "pyogrio>=0.9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+ignore = [
+    "SIM905",  # word lists read better as split strings
+    "ISC004",  # implicit concatenation inside tuples is used deliberately for long text
+]

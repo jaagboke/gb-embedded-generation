@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Data is reproducible from sources; never commit it
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.duckdb
+*.duckdb.wal
+
+.env
+.DS_Store
+
+# Raw source downloads (large, re-downloadable)
+downloads/
+
+# IDE settings
+.idea/

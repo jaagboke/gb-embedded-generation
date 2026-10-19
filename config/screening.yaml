@@ -1,0 +1,52 @@
+# Default screening rules for temporary and standby generator sites.
+#
+# These are ASSUMPTIONS chosen to be sensible for a DNO deploying diesel generators during
+# outages, maintenance or for resilience. They are not taken from any company's policy.
+# Every value can be changed here or in the app; the results always show which rules fired.
+# See docs/screening-method.md for the reasoning behind each number.
+
+region:
+  # Area covered by the bundled reference data (OSGB36 metres): North West England,
+  # Cheshire, Merseyside and North Wales. Sites outside it are reported, not screened.
+  easting: [170000, 420000]
+  northing: [280000, 600000]
+
+setting:                          # rural / borderline / urban
+  radius_m: 250                   # count addresses within this distance of the site
+  urban_if:
+    ons_urban: true               # ONS classes the output area as Urban, OR
+    addresses_at_least: 50        # ...this many addresses within radius_m
+  rural_if:                       # all of these must hold
+    ons_rural: true
+    addresses_below: 10
+    nearest_address_at_least_m: 100
+  # anything else is "borderline"
+
+noise:
+  # Generator noise is usually quoted as sound pressure at 7 m, in dB(A).
+  reference_distance_m: 7
+  # Used when the input file gives no noise figure. Typical canopied diesel sets.
+  assumed_level_by_kva:           # upper kVA bound -> dB(A) at 7 m
+    - [100, 65]
+    - [500, 70]
+    - [1000, 75]
+    - [100000, 80]
+  # Typical night-time background (LA90, dB) by setting, used until measured or mapped
+  # values are available. Day values are 5 dB higher.
+  assumed_night_background_db:
+    rural: 30
+    borderline: 35
+    urban: 40
+  day_uplift_db: 5
+  # BS 4142-style comparison of predicted level against background. Indicative only.
+  impact_bands:                   # excess dB at or above -> label
+    - [10, "Significant adverse impact likely"]
+    - [5, "Adverse impact likely"]
+    - [0, "Low impact, depending on context"]
+    - [-100, "Low impact"]
+  rag:                            # excess dB thresholds for the traffic-light column
+    red_at_least: 10
+    amber_at_least: 5
+
+nearby_generation:
+  radius_m: 2000                  # existing and planned generation within this distance

@@ -1,0 +1,72 @@
+# Raw technology label -> harmonised enum, per source.
+# The loader fails if it meets a label not listed here, so new labels surface as an error
+# instead of silently landing in "other".
+
+enum:
+  - solar_pv
+  - onshore_wind
+  - offshore_wind
+  - battery_storage
+  - other_storage
+  - pumped_storage
+  - hydro
+  - marine
+  - biomass
+  - anaerobic_digestion
+  - landfill_gas
+  - energy_from_waste
+  - hydrogen
+  - geothermal
+  - fossil_gas
+  - fossil_oil
+  - hybrid
+  - other
+
+repd:
+  Solar Photovoltaics: solar_pv
+  Wind Onshore: onshore_wind
+  Wind Offshore: offshore_wind
+  Battery: battery_storage
+  Liquid Air Energy Storage: other_storage
+  Compressed Air Energy Storage: other_storage
+  Flywheels: other_storage
+  Pumped Storage Hydroelectricity: pumped_storage
+  Small Hydro: hydro
+  Large Hydro: hydro
+  Tidal Stream: marine
+  Tidal Lagoon: marine
+  Shoreline Wave: marine
+  Biomass (dedicated): biomass
+  Biomass (co-firing): biomass
+  Anaerobic Digestion: anaerobic_digestion
+  Sewage Sludge Digestion: anaerobic_digestion
+  Landfill Gas: landfill_gas
+  EfW Incineration: energy_from_waste
+  Advanced Conversion Technologies: energy_from_waste   # gasification/pyrolysis of waste
+  Hydrogen: hydrogen
+  Fuel Cell (Hydrogen): hydrogen
+  Geothermal: geothermal
+  Hot Dry Rocks (HDR): geothermal
+  Air Source Heat Pumps: other
+  Unknown: other
+
+# ECR (ENA Open Networks format). Shared across DNOs because the vocabulary is the ENA one,
+# though each DNO spells it differently. Rules are regexes tested in order against
+# "<ENERGY SOURCE 1> :: <ENERGY CONVERSION TECHNOLOGY 1>" after upper-casing and collapsing
+# whitespace. First match wins; no match fails the load.
+ecr_rules:
+  - {pattern: "&|COMBI", technology: hybrid}                        # BATTERY & SOLAR, PV & BESS
+  - {pattern: "OFFSHORE WIND", technology: offshore_wind}
+  - {pattern: "WIND", technology: onshore_wind}
+  - {pattern: "PHOTOVOLTAIC|\\bPV\\b|SOLAR", technology: solar_pv}
+  - {pattern: "ELECTROCHEMICAL|BESS|BATTER", technology: battery_storage}
+  - {pattern: "STORAGE|STORED ENERGY", technology: other_storage}
+  - {pattern: "WATER|HYDRO", technology: hydro}
+  - {pattern: "LANDFILL", technology: landfill_gas}
+  - {pattern: "ANAEROBIC|BIOGAS|SEWAGE", technology: anaerobic_digestion}
+  - {pattern: "BIOMASS|BIOFUEL", technology: biomass}
+  - {pattern: "WASTE", technology: energy_from_waste}
+  - {pattern: "OIL|DIESEL", technology: fossil_oil}
+  - {pattern: "GAS", technology: fossil_gas}                        # includes coal mine gas
+  - {pattern: "INTERCONNECTOR", technology: other}
+  - {pattern: "^(OTHER|STANDBY GEN|GENERATION|CHP|)\\s*::", technology: other}  # no fuel stated

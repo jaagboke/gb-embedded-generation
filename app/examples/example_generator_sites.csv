@@ -1,0 +1,15 @@
+Site ID,Site name,Location,Generator rating (kVA),Noise at 7m dB(A),Operating period,Notes
+G01,Wrexham town centre substation,SJ 334 503,500,,24h,Example only - made-up site
+G02,Chester city primary,"53.1910, -2.8910",800,72,night,Example only - made-up site
+G03,Llangollen valley pole,SJ 215 420,60,,24h,Example only - made-up site
+G04,Denbigh Moors hill site,SH 950 560,200,,day,Example only - made-up site
+G05,Anglesey farm feed,SH 450 800,100,64,24h,Example only - made-up site
+G06,Crewe industrial estate,SJ 712 548,1000,,24h,Example only - made-up site
+G07,Delamere rural ring main,SJ 555 695,250,68,night,Example only - made-up site
+G08,Mold high street,"323900, 363900",150,,day,Example only - made-up site
+G09,Manchester city centre,"53.4794, -2.2453",1250,,24h,Example only - made-up site
+G10,Kendal edge of town,SD 525 925,400,,24h,Example only - made-up site
+G11,Forest of Bowland farm,"53.9800, -2.5500",80,,24h,Example only - made-up site
+G12,Padiham battery site,BB12 7HL,500,,night,Example only - postcode from public register
+G13,Chadderton works,OL9 9LL,300,70,24h,Example only - postcode from public register
+G14,Missing location example,,200,,24h,Shows how a row with no location is reported

@@ -1,0 +1,10 @@
+# Used by Streamlit Community Cloud to run app/streamlit_app.py.
+streamlit>=1.39
+pandas>=2.2
+pydeck>=0.9
+pyproj>=3.6
+pyyaml>=6.0
+scipy>=1.11
+shapely>=2.0
+pyarrow>=14
+openpyxl>=3.1
