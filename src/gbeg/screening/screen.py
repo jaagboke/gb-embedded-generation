@@ -59,7 +59,7 @@ def screen(sites: pd.DataFrame, ref: ReferenceData, cfg: dict,
 
     for i, row in sites.iterrows():
         name = _site_name(row, cols, i)
-        loc = locate_row(row, cols, ref.postcode_lookup)
+        loc = locate_row(row, cols, ref.postcode_lookup, ref.site_lookup)
         given = _location_text(row, cols)
         if loc.issue:
             problems.append({"Row": i + 2, "Site": name, "Location given": given,

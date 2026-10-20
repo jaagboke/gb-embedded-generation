@@ -1,0 +1,701 @@
+label,name,type,voltage,transformers,e,n
+Aberdyfi,Aberdyfi,Primary,"[33,11]",ABERDYFI T1,260371,296134
+Abergele,Abergele,Primary,"[33,11]",ABERGELE T1,296006,376517
+Abersoch,Abersoch,Primary,"[33,11]",ABERSOCH T1,230004,327905
+Aberystwyth (BSP),Aberystwyth,BSP,"[132,33]",ABERYSTWYTH GT2,260710,281298
+Aberystwyth (Primary),Aberystwyth,Primary,"[33,11]",ABERYSTWYTH T1,260703,281298
+Acer Ave,Acer Ave,Primary,"[33,11]",ACER AVE T1,371058,357134
+Acornfield Rd,Acornfield Rd,Primary,"[33,11]",ACORNFIELD RD T1,343608,398490
+Acton,Acton,Primary,"[33,11]",ACTON T1,363084,353440
+Aigburth Vale,Aigburth Vale,Primary,"[33,11]",AIGBURTH VALE T1,337919,386823
+Ainsdale,Ainsdale,Primary,"[33,6.6]",AINSDALE T1,331582,412325
+Ainsworth Lane,Ainsworth Lane,Primary,"[33,11]",AINSWORTH LANE T1,342721,396487
+Aintree,Aintree,BSP,"[132,33]",AINTREE GT1 / AINTREE GT2,337140,399774
+Airbus,Airbus,Primary,"[33,11]",AIRBUS T1,335111,364307
+Airport,Airport,Primary,"[33,11]",AIRPORT T1,343155,382852
+Albert Dock,Albert Dock,Primary,"[33,11]",ALBERT DOCK T1,334212,389644
+Allerton,Allerton,Primary,"[33,11]",ALLERTON T1,340091,386517
+Almatex,Almatex,Primary,"[33,6.6]",ALMATEX T1,353034,394682
+Almonds Turn,Almonds Turn,Primary,"[33,11]",ALMONDS TURN T1,334640,399863
+Alpoco,Alpoco,Primary,"[33,11]",ALPOCO T1,227063,380605
+Amlwch (BSP),Amlwch,BSP,"[132,33]",AMLWCH GT1,244768,392999
+Amlwch (Primary),Amlwch,Primary,"[33,11]",AMLWCH T1 / AMLWCH T2,244715,393001
+Anderton,Anderton,Primary,"[33,11]",ANDERTON T1,364883,375732
+Appleton,Appleton,Primary,"[33,11]",APPLETON T1,351694,386318
+Arrowe Pk Hosp,Arrowe Pk Hosp,Primary,"[33,11]",ARROWE PK HOSP T1,327176,386631
+Arundel,Arundel,Primary,"[33,6.3]",ARUNDEL T1,338359,388397
+Ash Rd,Ash Rd,Primary,"[33,11]",ASH RD T1,337666,350532
+Associated Lead,Associated Lead,Primary,"[33,11]",ASSOCIATED LEAD T1,341692,366692
+Astmoor Ind Est,Astmoor Ind Est,Primary,"[33,11]",ASTMOOR IND EST T1,352973,383178
+Athol St,Athol St,Primary,"[33,6.3]",ATHOL ST T1,334437,392411
+Atlantic Complex,Atlantic Complex,Primary,"[33,11]",ATLANTIC COMPLEX T1,335320,398218
+Audlem,Audlem,Primary,"[33,11]",AUDLEM T1,367283,344398
+Bala,Bala,Primary,"[33,11]",BALA T1,293431,337043
+Banastre Rd,Banastre Rd,Primary,"[33,6.6]",BANASTRE RD T1,333521,416036
+Bangor,Bangor,BSP,"[132,33]",BANGOR GT2,254458,370269
+Bangor Hosp,Bangor Hosp,Primary,"[33,11]",BANGOR HOSP T1,256002,370267
+Bangor University,Bangor University,Primary,"[33,11]",BANGOR UNIVERSITY T1,257106,371859
+Barbauld St,Barbauld St,Primary,"[33,11]",BARBAULD ST T1,360656,387881
+Barmouth,Barmouth,Primary,"[33,11]",BARMOUTH T1,261017,316129
+Barnston,Barnston,Primary,"[33,11]",BARNSTON T1,327138,382848
+Baschurch,Baschurch,Primary,"[33,11]",BASCHURCH T1,342257,323439
+Bass Charrington,Bass Charrington,Primary,"[33,11]",BASS CHARRINGTON T1 / BASS CHARRINGTON T2,356610,379695
+Battersby La,Battersby La,Primary,"[33,6]",BATTERSBY LA T1,361224,388956
+Beaumaris,Beaumaris,Primary,"[33,11]",BEAUMARIS T1 / BEAUMARIS T2,258543,377750
+Beaumont St,Beaumont St,Primary,"[33,11]",BEAUMONT ST T1,336902,389373
+Bedburn Dv,Bedburn Dv,Primary,"[33,11]",BEDBURN DV T1,342590,391193
+Beech St,Beech St,Primary,"[33,6.3]",BEECH ST T1,337446,390813
+Bemrose,Bemrose,Primary,"[33,11]",BEMROSE T1,337295,395933
+Bentinck St,Bentinck St,Primary,"[33,6.6/6]",BENTINCK ST T1 / BENTINCK ST T2,331479,388725
+Bersham Colliery,Bersham Colliery,Primary,"[33,11]",BERSHAM COLLIERY T1,331362,348037
+Bersham Rd,Bersham Rd,Primary,"[33,11]",BERSHAM RD T1,332243,349615
+Bethesda,Bethesda,Primary,"[33,11]",BETHESDA T1,261739,366223
+Betws-Y-Coed,Betws-Y-Coed,Primary,"[33,11]",BETWS-Y-COED T1,279454,356628
+Bewsey,Bewsey,Primary,"[33,11]",BEWSEY T1,359296,389072
+Bibbys,Bibbys,Primary,"[33,6.3]",BIBBYS T1,333574,394404
+Bicc Huyton Quarry,Bicc Huyton Quarry,Primary,"[33,11]",BICC HUYTON QUARRY T1,345440,390491
+Bicc Wrexham,Bicc Wrexham,Primary,"[33,11]",BICC WREXHAM T1,338875,349615
+Birkenhead Central,Birkenhead Central,Primary,"[33,6.6]",BIRKENHEAD CENTRAL T1,332143,388671
+Blacon,Blacon,Primary,"[33,11]",BLACON T1,337901,368576
+Blaenau Ffestiniog,Blaenau Ffestiniog,Primary,"[33,11]",BLAENAU FFESTINIOG T1,269585,345811
+Bluebell La,Bluebell La,Primary,"[33,11]",BLUEBELL LA T1,344067,391854
+Blundell St,Blundell St,Primary,"[33,11]",BLUNDELL ST T1,334794,389413
+Blundellsands (North),Blundellsands (North),Primary,"[33,11]",BLUNDELLSANDS (NORTH) T1,330695,400142
+Blundellsands (South),Blundellsands (South),Primary,"[33,11]",BLUNDELLSANDS (SOUTH) T1,331013,399626
+Bodfari Producers,Bodfari Producers,Primary,"[33,11]",BODFARI PRODUCERS T1,338047,362321
+Bolton St,Bolton St,Primary,"[33,11]",BOLTON ST T1,335093,390377
+Bootle,Bootle,BSP,"[132,33]",BOOTLE GT1 / BOOTLE GT2A,334639,395991
+Bootle Grid,Bootle Grid,Primary,"[33,11]",BOOTLE GRID T1 / BOOTLE GRID T2,334639,395991
+Botwnnog,Botwnnog,Primary,"[33,11]",BOTWNNOG T1,226379,331052
+Boulevard,Boulevard,Primary,"[33,11]",BOULEVARD T1,359196,391321
+Bow St,Bow St,Primary,"[33,11]",BOW ST T1,263087,285739
+Bowater Containers,Bowater Containers,Primary,"[33,11]",BOWATER CONTAINERS T1,339186,378206
+Br Station,Br Station,Primary,"[33,11]",BR STATION T1,370865,354988
+British Aluminium Latchford,British Aluminium Latchford,Primary,"[33,11]",BRITISH ALUMINIUM LATCHFORD T1,363746,387467
+British Oxygen,British Oxygen,Primary,"[33,6.6]",BRITISH OXYGEN T1,351360,397225
+British Pipe Association,British Pipe Association,Primary,"[33,11]",BRITISH PIPE ASSOCIATION T1,341921,374544
+British Sidac,British Sidac,Primary,"[33,6.6]",BRITISH SIDAC T1,352952,393793
+Broadgreen,Broadgreen,Primary,"[33,11]",BROADGREEN T1,340836,390179
+Bromborough,Bromborough,BSP,"[132,33]",BROMBOROUGH GT2 / BROMBOROUGH GT3,335889,382355
+Bromfield,Bromfield,Primary,"[33,11]",BROMFIELD T1 / BROMFIELD T2,324336,362808
+Brook La,Brook La,Primary,"[33,11]",BROOK LA T1,340706,367450
+Brook St,Brook St,Primary,"[33,11]",BROOK ST T1,333843,390817
+Brookbridge,Brookbridge,Primary,"[33,11]",BROOKBRIDGE T1,345731,392624
+Broughton Retail Park,Broughton Retail Park,Primary,"[33,11]",BROUGHTON RETAIL PARK T1,335003,363752
+Brymbo,Brymbo,BSP,"[132,33]",BRYMBO GT1 / BRYMBO GT2,329097,353199
+Bryn Stanley,Bryn Stanley,Primary,"[33,11]",BRYN STANLEY T1,304655,365686
+Buckingham St,Buckingham St,Primary,"[33,6.3]",BUCKINGHAM ST T1,335146,392279
+Buckley,Buckley,Primary,"[33,11]",BUCKLEY T1 / BUCKLEY T2,329524,363540
+Buckley Cross,Buckley Cross,Primary,"[33,11]",BUCKLEY CROSS T1,327747,364090
+Buildwas Road,Buildwas Road,Primary,"[33,11]",BUILDWAS ROAD T1,329394,378675
+Burlington Ave,Burlington Ave,Primary,"[33,11]",BURLINGTON AVE T1,330738,407130
+Burlington St,Burlington St,BSP,"[132,33]",BURLINGTON ST GT1 / BURLINGTON ST GT2,334032,391738
+Burmah Oil,Burmah Oil,Primary,"[33,6.6]",BURMAH OIL T1,342386,375985
+Butlins,Butlins,Primary,"[33,11]",BUTLINS T1,242935,336887
+Buttington Cross,Buttington Cross,Primary,"[33,11]",BUTTINGTON CROSS T1,323946,308483
+Bxl Bromborough,Bxl Bromborough,Primary,"[33,11]",BXL BROMBOROUGH T1,335126,382532
+Cable St,Cable St,Primary,"[33,11]",CABLE ST T1 / CABLE ST T2,334526,390229
+Cadburys,Cadburys,Primary,"[33,11]",CADBURYS T1 / CADBURYS T2,326278,390907
+Cadburys Kronospan,Cadburys Kronospan,Primary,"[33,11]",CADBURYS KRONOSPAN T1 / CADBURYS KRONOSPAN T2,328398,338222
+Caergeiliog (BSP),Caergeiliog,BSP,"[132,33]",CAERGEILIOG GT1 / CAERGEILIOG GT2,230476,378254
+Caergeiliog (Primary),Caergeiliog,Primary,"[33,11]",CAERGEILIOG T1,230476,378254
+Caergwrle,Caergwrle,Primary,"[33,11]",CAERGWRLE T1,329626,358666
+Caernarfon (BSP),Caernarfon,BSP,"[132,33]",CAERNARFON GT2,249159,363542
+Caernarfon (Primary),Caernarfon,Primary,"[33,11]",CAERNARFON T1,249159,363542
+Caersws,Caersws,Primary,"[33,11]",CAERSWS T1,303761,292661
+Caldy,Caldy,Primary,"[33,11]",CALDY T1,322681,385189
+Carborundum,Carborundum,Primary,"[33,11]",CARBORUNDUM T1,348987,399364
+Carlton St,Carlton St,Primary,"[33,6.6]",CARLTON ST T1 / CARLTON ST T2,350197,395245
+Carmel,Carmel,Primary,"[33,11]",CARMEL T1,249403,355529
+Carr La East,Carr La East,Primary,"[33,11]",CARR LA EAST T1,339765,394866
+Castle Beeston St,Castle Beeston St,Primary,"[33,11]",CASTLE BEESTON ST T1,365352,373315
+Castle Cement,Castle Cement,BSP,"[132,33]",CASTLE CEMENT GT1,328908,362181
+Cefn Mawr,Cefn Mawr,Primary,"[33,11]",CEFN MAWR T1,319975,363991
+Cemaes Bay,Cemaes Bay,Primary,"[33,11]",CEMAES BAY T1,236983,392782
+Cemmaes Rd,Cemmaes Rd,Primary,"[33,11]",CEMMAES RD T1,281819,304594
+Cereal Partners,Cereal Partners,Primary,"[33,11]",CEREAL PARTNERS T1,335013,383546
+Chalon Way,Chalon Way,Primary,"[33,6.6]",CHALON WAY T1 / CHALON WAY T2,351418,395155
+Champion Plugs,Champion Plugs,Primary,"[33,11]",CHAMPION PLUGS T1 / CHAMPION PLUGS T2,326966,387202
+Chapelford,Chapelford,Primary,"[33,11]",CHAPELFORD T1,357190,389302
+Cheshire Green,Cheshire Green,Primary,"[33,11]",CHESHIRE GREEN T1,360116,357502
+Chester Gates,Chester Gates,Primary,"[33,11]",CHESTER GATES T1,337853,372560
+Chester Main,Chester Main,BSP,"[132,33]",CHESTER MAIN GT4,339210,369104
+Chester St,Chester St,Primary,"[33,6.6/6]",CHESTER ST T1,333643,350475
+Chester St (Wrexham),Chester St (Wrexham),Primary,"[33,11]",CHESTER ST (WREXHAM) T1,332773,388963
+Chester St Crewe,Chester St Crewe,Primary,"[33,11]",CHESTER ST CREWE T1 / CHESTER ST CREWE T2,370152,355626
+Childwall,Childwall,Primary,"[33,11]",CHILDWALL T1,341357,388237
+Childwall Fiveways,Childwall Fiveways,Primary,"[33,11]",CHILDWALL FIVEWAYS T1,340367,389362
+Chisenhale St,Chisenhale St,Primary,"[33,6.3]",CHISENHALE ST T1,334065,391504
+Chowley,Chowley,Primary,"[33,11]",CHOWLEY T1 / CHOWLEY T2,347296,356235
+Church Lane,Church Lane,Primary,"[33,11]",CHURCH LANE T1,306587,382997
+Church Lawton,Church Lawton,Primary,"[33,11]",CHURCH LAWTON T1,381703,355646
+Church St Winsford,Church St Winsford,Primary,"[33,11]",CHURCH ST WINSFORD T1,365376,366450
+Civic Centre,Civic Centre,Primary,"[33,11]",CIVIC CENTRE T1,370755,355645
+Claughton Ave,Claughton Ave,Primary,"[33,11]",CLAUGHTON AVE T1,370450,354078
+Cledford,Cledford,Primary,"[33,11]",CLEDFORD T1,370856,364467
+Clifton,Clifton,Primary,"[33,11]",CLIFTON T1,352362,380614
+Clockface,Clockface,Primary,"[33,11]",CLOCKFACE T1,353442,391541
+Clubmoor,Clubmoor,Primary,"[33,6.3]",CLUBMOOR T1 / CLUBMOOR T2,337807,393445
+Cocoa Barry,Cocoa Barry,Primary,"[33,11]",COCOA BARRY T1,338154,366436
+Coedpoeth,Coedpoeth,Primary,"[33,11]",COEDPOETH T1 / COEDPOETH T2,328918,351522
+Colwyn Bay (BSP),Colwyn Bay,BSP,"[132,33]",COLWYN BAY GT1 / COLWYN BAY GT2,282636,379198
+Colwyn Bay (Primary),Colwyn Bay,Primary,"[33,11]",COLWYN BAY T1 / COLWYN BAY T2,282636,379198
+Coney Green,Coney Green,Primary,"[33,11]",CONEY GREEN T1,329226,329609
+Conix,Conix,Primary,"[33,11]",CONIX T1 / CONIX T2,344061,384043
+Connahs Quay Local,Connahs Quay Local,Primary,"[33,11]",CONNAHS QUAY LOCAL T1 / CONNAHS QUAY LOCAL T2,328479,370533
+Conwy,Conwy,Primary,"[33,11]",CONWY T1,277535,377891
+Coppenhall,Coppenhall,BSP,"[132,33]",COPPENHALL GT1,371605,356652
+Corwen,Corwen,Primary,"[33,11]",CORWEN T1,306240,343410
+Crane Bank (BSP),Crane Bank,BSP,"[132,33]",CRANE BANK GT1,339829,366309
+Crane Bank (Primary),Crane Bank,Primary,"[33,11]",CRANE BANK T1,339829,366309
+Crewe (BSP),Crewe,BSP,"[132,33]",CREWE GT1 / CREWE GT2A / CREWE GT4A,367612,356385
+Crewe (Primary),Crewe,Primary,"[33,11]",CREWE T1,367639,356355
+Criggion Radio Station,Criggion Radio Station,Primary,"[33,11]",CRIGGION RADIO STATION T1,327974,314641
+Crosby,Crosby,Primary,"[33,11]",CROSBY T1,332881,400322
+Crossfields,Crossfields,Primary,"[33,11]",CROSSFIELDS T1 / CROSSFIELDS T2,359893,388133
+Crown Courts,Crown Courts,Primary,"[33,11]",CROWN COURTS T1,334326,390198
+Crowton,Crowton,Primary,"[33,11]",CROWTON T1,357912,373998
+Croxteth,Croxteth,Primary,"[33,11]",CROXTETH T1,341256,393523
+Cwm Dyli,Cwm Dyli,Primary,"[33,11]",CWM DYLI T1,265321,353976
+Daily Post & Echo,Daily Post & Echo,Primary,"[33,6.3]",DAILY POST & ECHO T1 / DAILY POST & ECHO T2,333868,390705
+Dallam,Dallam,BSP,"[132,33]",DALLAM GT1,360164,390718
+Daresbury Npl,Daresbury Npl,Primary,"[33,11]",DARESBURY NPL T1,357341,383104
+Daresbury Pk,Daresbury Pk,Primary,"[33,11]",DARESBURY PK T1,356775,381651
+Davy Way,Davy Way,Primary,"[33,11]",DAVY WAY T1,332315,356646
+Deeside Aluminium,Deeside Aluminium,Primary,"[33,11]",DEESIDE ALUMINIUM T1,337596,349242
+Deeside Ind Pk,Deeside Ind Pk,Primary,"[33,11]",DEESIDE IND PK T1,332983,370834
+Deeside Ind Pk 6Th Ave,Deeside Ind Pk 6Th Ave,Primary,"[33,11]",DEESIDE IND PK 6TH AVE T1,332343,370454
+Deganwy,Deganwy,Primary,"[33,11]",DEGANWY T1,278809,379216
+Delamore St,Delamore St,Primary,"[33,6.3]",DELAMORE ST T1,335247,394347
+Denbigh,Denbigh,Primary,"[33,11]",DENBIGH T1,305834,366831
+Desoto Rd,Desoto Rd,Primary,"[33,11]",DESOTO RD T1,350455,384328
+Dibbinsdale,Dibbinsdale,Primary,"[33,11]",DIBBINSDALE T1,334044,380889
+Dickinsons,Dickinsons,Primary,"[33,11]",DICKINSONS T1,342715,398256
+Dingle,Dingle,Primary,"[33,6.3]",DINGLE T1,336390,387923
+Dingle Vale,Dingle Vale,Primary,"[33,11]",DINGLE VALE T1,336074,387192
+Ditton,Ditton,Primary,"[33,11]",DITTON T1,349771,386327
+Dodds La,Dodds La,Primary,"[33,11]",DODDS LA T1,337884,402891
+Dolgarrog (BSP),Dolgarrog,BSP,"[132,33]",DOLGARROG GT2,277028,367670
+Dolgarrog (Primary),Dolgarrog,Primary,"[33,11]",DOLGARROG T1 / DOLGARROG T2,277028,367670
+Dolgellau,Dolgellau,Primary,"[33,11]",DOLGELLAU T1,273688,317708
+Dover Rd,Dover Rd,Primary,"[33,6.6]",DOVER RD T1,332536,414692
+Duchy Rd,Duchy Rd,Primary,"[33,11]",DUCHY RD T1,372379,353933
+Duckington,Duckington,Primary,"[33,11]",DUCKINGTON T1 / DUCKINGTON T2,349593,351783
+Duddon,Duddon,Primary,"[33,11]",DUDDON T1,351751,365067
+Dunlop Plastics,Dunlop Plastics,Primary,"[33,11]",DUNLOP PLASTICS T1,337776,349718
+Dunlops Walton,Dunlops Walton,Primary,"[33,6.3]",DUNLOPS WALTON T1,336167,395525
+Dutton,Dutton,BSP,"[132,33]",DUTTON GT2,355810,379624
+Dyffryn Ardudwy,Dyffryn Ardudwy,Primary,"[33,11]",DYFFRYN ARDUDWY T1,258460,322537
+Dyserth Rd,Dyserth Rd,Primary,"[33,11]",DYSERTH RD T1,303027,381243
+Eagles Meadow,Eagles Meadow,Primary,"[33,11]",EAGLES MEADOW T1,333845,350083
+Eccleston,Eccleston,Primary,"[33,11]",ECCLESTON T1,347353,393318
+Ecp West-Banks Rd,Ecp West-Banks Rd,Primary,"[33,11]",ECP WEST-BANKS RD T1,341305,383520
+Eden Vale,Eden Vale,Primary,"[33,11]",EDEN VALE T1,360187,372387
+Edern,Edern,Primary,"[33,11]",EDERN T1,227977,338990
+Edge Hill,Edge Hill,Primary,"[33,11]",EDGE HILL T1,336493,390158
+Ega Electric,Ega Electric,Primary,"[33,11]",EGA ELECTRIC T1,303222,373794
+Egerton,Egerton,Primary,"[33,11]",EGERTON T1,332124,386379
+Egremont,Egremont,Primary,"[33,11]",EGREMONT T1,331868,391691
+Eithinog,Eithinog,Primary,"[33,11]",EITHINOG T1,256460,371489
+Electra Way,Electra Way,Primary,"[33,11]",ELECTRA WAY T1,372043,354936
+Ellesmere,Ellesmere,Primary,"[33,11]",ELLESMERE T1,339748,335285
+Ellesmere Port,Ellesmere Port,BSP,"[132,33]",ELLESMERE PORT GT1 / ELLESMERE PORT GT2,341542,376285
+Ellesmere Port Local,Ellesmere Port Local,Primary,"[33,11]",ELLESMERE PORT LOCAL T1,341542,376285
+Elton,Elton,Primary,"[33,11]",ELTON T1,345900,375421
+Elworth,Elworth,BSP,"[132,33]",ELWORTH GT1 / ELWORTH GT2,372735,363421
+Engineer Pk,Engineer Pk,Primary,"[33,11]",ENGINEER PK T1,333618,367487
+Estuary Commerce Pk,Estuary Commerce Pk,Primary,"[33,11]",ESTUARY COMMERCE PK T1,342084,383532
+Everton Brow,Everton Brow,Primary,"[33,6.3]",EVERTON BROW T1,335334,391431
+Everton Rd,Everton Rd,Primary,"[33,6.3]",EVERTON RD T1,335842,391613
+Express Foods,Express Foods,Primary,"[33,11]",EXPRESS FOODS T1,338994,322389
+Fairbourne,Fairbourne,Primary,"[33,11]",FAIRBOURNE T1,263268,313494
+Fazakerley,Fazakerley,BSP,"[132,33]",FAZAKERLEY GT1,337527,396431
+Fazakerley Hospital,Fazakerley Hospital,Primary,"[33,11]",FAZAKERLEY HOSPITAL T1,338234,397178
+Ferodo,Ferodo,Primary,"[33,11]",FERODO T1,249970,365498
+Ffordd Las,Ffordd Las,Primary,"[33,11]",FFORDD LAS T1 / FFORDD LAS T2,301175,380647
+Firestone,Firestone,Primary,"[33,11]",FIRESTONE T1,338373,349177
+Fisons,Fisons,Primary,"[33,11]",FISONS T1,376722,366748
+Flint,Flint,Primary,"[33,11]",FLINT T1 / FLINT T2,323904,373407
+Fodens,Fodens,Primary,"[33,11]",FODENS T1,373925,360989
+Ford,Ford,Primary,"[33,11]",FORD T1,327953,388255
+Forden,Forden,Primary,"[33,11]",FORDEN T1,322446,299650
+Formby,Formby,BSP,"[132,33]",FORMBY GT2A / FORMBY GT2B,330981,406992
+Four Crosses (BSP),Four Crosses,BSP,"[132,33]",FOUR CROSSES GT2,239861,339783
+Four Crosses (Primary),Four Crosses,Primary,"[33,11]",FOUR CROSSES T1,239861,339783
+Freshfield,Freshfield,Primary,"[33,11]",FRESHFIELD T1,329074,408367
+Frodsham Local,Frodsham Local,Primary,"[33,11]",FRODSHAM LOCAL T1,351649,378052
+Gadbrook,Gadbrook,Primary,"[33,11]",GADBROOK T1,367942,372440
+Gaerwen View,Gaerwen View,Primary,"[33,11]",GAERWEN VIEW T1,247526,371276
+Gardners Row,Gardners Row,Primary,"[33,6.3]",GARDNERS ROW T1,334728,391383
+Garston (BSP),Garston,BSP,"[132,33]",GARSTON GT2,340525,384475
+Garston (Primary),Garston,Primary,"[33,11]",GARSTON T1,340525,384464
+Gateacre,Gateacre,BSP,"[132,33]",GATEACRE GT1,344196,388737
+Gatewarth Sewage,Gatewarth Sewage,Primary,"[33,11]",GATEWARTH SEWAGE T1,358249,387268
+Gavin Rd,Gavin Rd,Primary,"[33,11]",GAVIN RD T1,348637,385449
+Gayton,Gayton,Primary,"[33,11]",GAYTON T1,327873,381257
+Gec St Helens,Gec St Helens,Primary,"[33,11]",GEC ST HELENS T1,350827,391322
+Gigg La Thelwall,Gigg La Thelwall,Primary,"[33,11]",GIGG LA THELWALL T1,365176,387457
+Gilbrook Dock,Gilbrook Dock,Primary,"[33,6.6]",GILBROOK DOCK T1,330429,390121
+Gillmoss,Gillmoss,BSP,"[132,33]",GILLMOSS GT1 / GILLMOSS GT2,340491,396593
+Glan-Yr-Afon,Glan-Yr-Afon,Primary,"[33,11]",GLAN-YR-AFON T1,302038,342558
+Gradwell St,Gradwell St,Primary,"[33,11]",GRADWELL ST T1 / GRADWELL ST T2,334716,390026
+Graig Fawr,Graig Fawr,Primary,"[33,11]",GRAIG FAWR T1 / GRAIG FAWR T2,305678,380166
+Granby,Granby,Primary,"[33,6.3]",GRANBY T1,335715,389122
+Grantham Cl,Grantham Cl,Primary,"[33,6.6]",GRANTHAM CL T1,333150,414138
+Gravel,Gravel,Primary,"[33,11]",GRAVEL T1,367399,366280
+Greasby,Greasby,Primary,"[33,11]",GREASBY T1,324929,387178
+Great Boughton,Great Boughton,Primary,"[33,11]",GREAT BOUGHTON T1,343163,366207
+Great Sankey,Great Sankey,Primary,"[33,11]",GREAT SANKEY T1,357988,387826
+Great Sutton,Great Sutton,Primary,"[33,11]",GREAT SUTTON T1,338604,375432
+Greek St,Greek St,Primary,"[33,11]",GREEK ST T1,335409,390584
+Greenfield,Greenfield,Primary,"[33,11]",GREENFIELD T1 / GREENFIELD T2,319924,378002
+Greenhall Whitley,Greenhall Whitley,Primary,"[33,11]",GREENHALL WHITLEY T1,361246,386775
+Grosvenor St,Grosvenor St,Primary,"[33,11]",GROSVENOR ST T1,340508,366061
+Grove Pk,Grove Pk,Primary,"[33,6.3]",GROVE PK T1,337243,388545
+Guilden Sutton,Guilden Sutton,BSP,"[132,33]",GUILDEN SUTTON GT1,343650,367870
+Gwersyllt,Gwersyllt,Primary,"[33,11]",GWERSYLLT T1,332037,353112
+Halewood,Halewood,BSP,"[132,33]",HALEWOOD GT3,344871,384412
+Halton Rd,Halton Rd,Primary,"[33,11]",HALTON RD T1,352363,382773
+Hammond Rd,Hammond Rd,Primary,"[33,11]",HAMMOND RD T1,343446,399438
+Harefield Rd,Harefield Rd,Primary,"[33,11]",HAREFIELD RD T1,343877,383144
+Harlech,Harlech,Primary,"[33,11]",HARLECH T1,258336,331657
+Harrington St,Harrington St,Primary,"[33,6.3]",HARRINGTON ST T1 / HARRINGTON ST T2 / HARRINGTON ST T3,334468,390352
+Hartford (BSP),Hartford,BSP,"[132,33]",HARTFORD GT1,363359,371372
+Hartford (Primary),Hartford,Primary,"[33,11]",HARTFORD T1 / HARTFORD T2,363359,371372
+Haskayne,Haskayne,Primary,"[33,11]",HASKAYNE T1,335951,407512
+Hatherton,Hatherton,Primary,"[33,11]",HATHERTON T1,368027,347274
+Hawarden (BSP),Hawarden,BSP,"[132,33]",HAWARDEN GT1 / HAWARDEN GT2,329846,365928
+Hawarden (Primary),Hawarden,Primary,"[33,11]",HAWARDEN T1,329874,365972
+Hawleys La,Hawleys La,Primary,"[33,11]",HAWLEYS LA T1,360470,390297
+Herons Way,Herons Way,Primary,"[33,11]",HERONS WAY T1,339595,363069
+Heswall,Heswall,BSP,"[132,33]",HESWALL GT1,328647,381779
+Hh Robertsons,Hh Robertsons,Primary,"[33,11]",HH ROBERTSONS T1,340469,376320
+Highfield St,Highfield St,Primary,"[33,11]",HIGHFIELD ST T1 / HIGHFIELD ST T2,334315,390833
+Hill Rd,Hill Rd,Primary,"[33,6.6]",HILL RD T1,329474,388977
+Hillcliffe,Hillcliffe,Primary,"[33,11]",HILLCLIFFE T1,361636,384903
+Hills Moss,Hills Moss,Primary,"[33,11]",HILLS MOSS T1,354034,393003
+Hirael,Hirael,Primary,"[33,11]",HIRAEL T1,258424,372599
+Holborn Hill,Holborn Hill,Primary,"[33,11]",HOLBORN HILL T1,340019,407002
+Holmes Chapel,Holmes Chapel,Primary,"[33,11]",HOLMES CHAPEL T1,376546,367728
+Holway Rd,Holway Rd,Primary,"[33,11]",HOLWAY RD T1,318132,376185
+Holyhead,Holyhead,Primary,"[33,11]",HOLYHEAD T1,225019,381793
+Holywell (BSP),Holywell,BSP,"[132,33]",HOLYWELL GT1 / HOLYWELL GT2,314630,374288
+Holywell (Primary),Holywell,Primary,"[33,11]",HOLYWELL T1,314650,374288
+Hooton Main,Hooton Main,Primary,"[33,11]",HOOTON MAIN T1,334693,378199
+Hooton Pk,Hooton Pk,BSP,"[132,33]",HOOTON PK GT1A / HOOTON PK GT2A,338941,378298
+Hopfield Rd,Hopfield Rd,Primary,"[33,11]",HOPFIELD RD T1,327016,389615
+Hornsbridge,Hornsbridge,Primary,"[33,11]",HORNSBRIDGE T1,352454,387845
+Horrocks La,Horrocks La,Primary,"[33,11]",HORROCKS LA T1,360759,388214
+Hough Green,Hough Green,Primary,"[33,11]",HOUGH GREEN T1,348523,387208
+Houghtons La,Houghtons La,Primary,"[33,11]",HOUGHTONS LA T1,348063,396259
+Hoylake (BSP),Hoylake,BSP,"[132,33]",HOYLAKE GT2,321827,388741
+Hoylake (Primary),Hoylake,Primary,"[33,11]",HOYLAKE T1,321861,388774
+Hpo Copperas Hill,Hpo Copperas Hill,Primary,"[33,11]",HPO COPPERAS HILL T1,335226,390375
+Hunts Cross,Hunts Cross,Primary,"[33,11]",HUNTS CROSS T1,343611,385940
+Huyton,Huyton,BSP,"[132,33]",HUYTON GT1,342921,392179
+Huyton Hey Rd,Huyton Hey Rd,Primary,"[33,11]",HUYTON HEY RD T1,344618,390701
+Ifton,Ifton,Primary,"[33,11]",IFTON T1 / IFTON T2,332257,337265
+Ilfords,Ilfords,Primary,"[33,11]",ILFORDS T1,378014,380204
+Ince Local,Ince Local,BSP,"[132,33]",INCE LOCAL GT1 / INCE LOCAL GT2 / INCE LOCAL GT3,345879,375877
+Ind Coope,Ind Coope,Primary,"[33,11]",IND COOPE T1,333039,350472
+Ind Est Earlsfield,Ind Est Earlsfield,Primary,"[33,11]",IND EST EARLSFIELD T1,344949,392800
+Inland Revenue Offices,Inland Revenue Offices,Primary,"[33,6.3]",INLAND REVENUE OFFICES T1,334578,394913
+Irby,Irby,Primary,"[33,11]",IRBY T1,325726,384506
+Ivy Ave,Ivy Ave,Primary,"[33,11]",IVY AVE T1,339497,385334
+Ivy St,Ivy St,Primary,"[33,11]",IVY ST T1,309942,397829
+Jacobs,Jacobs,Primary,"[33,11]",JACOBS T1 / JACOBS T2,337033,396248
+Johnstown,Johnstown,Primary,"[33,11]",JOHNSTOWN T1,330511,345379
+Kelco,Kelco,Primary,"[33,11]",KELCO T1,343069,396783
+Kelloggs,Kelloggs,Primary,"[33,11]",KELLOGGS T1,332839,396462
+Kelloggs (Wrexham),Kelloggs (Wrexham),Primary,"[33,11]",KELLOGGS (WREXHAM) T1 / KELLOGGS (WREXHAM) T2,338690,350374
+Kensington Road,Kensington Road,Primary,"[33,11]",KENSINGTON ROAD T1,334413,416902
+Kenton Rd,Kenton Rd,Primary,"[33,11]",KENTON RD T1,344980,385245
+Kershaw Ave,Kershaw Ave,Primary,"[33,11]",KERSHAW AVE T1,332699,399201
+King George St,King George St,Primary,"[33,11]",KING GEORGE ST T1,330318,368436
+Kings Dock,Kings Dock,Primary,"[33,11]",KINGS DOCK T1 / KINGS DOCK T2,334347,389275
+Kingsland 33,Kingsland 33,Primary,"[33,11]",KINGSLAND 33 T1,364473,390399
+Kingsway Tunnel,Kingsway Tunnel,Primary,"[33,11]",KINGSWAY TUNNEL T1,333712,391420
+Kinnerton,Kinnerton,Primary,"[33,11]",KINNERTON T1,334806,362542
+Kirkby,Kirkby,BSP,"[132,33]",KIRKBY GT2 / KIRKBY GT3,343706,397299
+Kirkby Central,Kirkby Central,Primary,"[33,11]",KIRKBY CENTRAL T1,341255,398775
+Kirkdale,Kirkdale,Primary,"[33,6.3]",KIRKDALE T1,335494,392953
+Knotty Ash,Knotty Ash,Primary,"[33,11]",KNOTTY ASH T1,340648,391684
+Knowsley,Knowsley,Primary,"[33,11]",KNOWSLEY T1,343756,395362
+Knutsford (BSP),Knutsford,BSP,"[132,33]",KNUTSFORD GT1 / KNUTSFORD GT2,375214,377926
+Knutsford (Primary),Knutsford,Primary,"[33,11]",KNUTSFORD T1 / KNUTSFORD T2,338833,366795
+Knutsford Way,Knutsford Way,Primary,"[33,11]",KNUTSFORD WAY T1,338833,366795
+Kodak,Kodak,Primary,"[33,11]",KODAK T1,343759,398956
+Lache,Lache,Primary,"[33,11]",LACHE T1,338256,363976
+Lark La,Lark La,Primary,"[33,11]",LARK LA T1,337278,387621
+Latchford,Latchford,Primary,"[33,11]",LATCHFORD T1 / LATCHFORD T2,362841,387396
+Lcww Huntington,Lcww Huntington,Primary,"[33,6.6]",LCWW HUNTINGTON T1 / LCWW HUNTINGTON T2,342160,363983
+Lea Green,Lea Green,Primary,"[33,11]",LEA GREEN T1,350816,392157
+Leeward Dr,Leeward Dr,Primary,"[33,11]",LEEWARD DR T1 / LEEWARD DR T2,342202,383932
+Legacy Local (BSP),Legacy Local,BSP,"[132,33]",LEGACY LOCAL GT1 / LEGACY LOCAL GT2,329113,347936
+Legacy Local (Primary),Legacy Local,Primary,"[33,11]",LEGACY LOCAL T1,329113,347936
+Leicester St,Leicester St,Primary,"[33,11]",LEICESTER ST T1,366006,374289
+Leighton Hospital,Leighton Hospital,Primary,"[33,11]",LEIGHTON HOSPITAL T1,368158,357798
+Lever Georgia Ave,Lever Georgia Ave,Primary,"[33,11]",LEVER GEORGIA AVE T1,335244,383409
+Levers Crossfields,Levers Crossfields,Primary,"[33,11]",LEVERS CROSSFIELDS T3,359887,388122
+Leyfield Rd,Leyfield Rd,Primary,"[33,11]",LEYFIELD RD T1,340581,392664
+Lime St,Lime St,Primary,"[33,11]",LIME ST T1 / LIME ST T2,334915,390491
+Linenhall St,Linenhall St,Primary,"[33,11]",LINENHALL ST T1,340303,366264
+Liscard,Liscard,Primary,"[33,11]",LISCARD T1,330680,391864
+Lister Dv A,Lister Dv A,Primary,"[33,6.3]",LISTER DV A T1 / LISTER DV A T2,338157,391816
+Lister Dv B (BSP),Lister Dv B,BSP,"[132,33]",LISTER DV B GT1 / LISTER DV B GT3,338157,391816
+Lister Dv B (Primary),Lister Dv B,Primary,"[33,11]",LISTER DV B T3,338157,391816
+Litherland,Litherland,BSP,"[132,33]",LITHERLAND GT1A / LITHERLAND GT1B,333095,398094
+Little Sutton,Little Sutton,Primary,"[33,11]",LITTLE SUTTON T1,337954,376775
+Littlewoods,Littlewoods,Primary,"[33,6.3]",LITTLEWOODS T1,333971,390927
+Liverpool Rd 33,Liverpool Rd 33,Primary,"[33,11]",LIVERPOOL RD 33 T1,353624,340973
+Liverpool University,Liverpool University,Primary,"[33,11]",LIVERPOOL UNIVERSITY T1 / LIVERPOOL UNIVERSITY T2 / LIVERPOOL UNIVERSITY T3,336116,390274
+Llaingoch,Llaingoch,Primary,"[33,11]",LLAINGOCH T1,223503,382484
+Llanarmon,Llanarmon,Primary,"[33,11]",LLANARMON T1,318581,356304
+Llanbedrog,Llanbedrog,Primary,"[33,11]",LLANBEDROG T1,231917,333072
+Llanberis,Llanberis,Primary,"[33,11]",LLANBERIS T1,258628,359623
+Llanddeusant,Llanddeusant,Primary,"[33,11]",LLANDDEUSANT T1,235603,384066
+Llanddu Quarry,Llanddu Quarry,Primary,"[33,11]",LLANDDU QUARRY T1,325555,322955
+Llandegfan,Llandegfan,Primary,"[33,11]",LLANDEGFAN T1,256144,373858
+Llandrinio,Llandrinio,Primary,"[33,11]",LLANDRINIO T1,328346,317428
+Llandudno,Llandudno,Primary,"[33,11]",LLANDUDNO T1 / LLANDUDNO T2,278547,381215
+Llandudno Junction,Llandudno Junction,Primary,"[33,11]",LLANDUDNO JUNCTION T1,280303,377899
+Llandyfrydog,Llandyfrydog,Primary,"[33,11]",LLANDYFRYDOG T1,246394,388158
+Llandyrnog,Llandyrnog,Primary,"[33,11]",LLANDYRNOG T1,311207,365715
+Llanfaelog,Llanfaelog,Primary,"[33,11]",LLANFAELOG T1,234396,373117
+Llanfair Caereinion,Llanfair Caereinion,Primary,"[33,11]",LLANFAIR CAEREINION T1,311159,306107
+Llanfair Pg,Llanfair Pg,Primary,"[33,11]",LLANFAIR PG T1,253443,372471
+Llanfairfechan,Llanfairfechan,Primary,"[33,11]",LLANFAIRFECHAN T1,268671,374354
+Llanfrothen,Llanfrothen,Primary,"[33,11]",LLANFROTHEN T1,261601,340245
+Llanfwrog,Llanfwrog,Primary,"[33,11]",LLANFWROG T1,311077,357617
+Llanfyllin,Llanfyllin,Primary,"[33,11]",LLANFYLLIN T1 / LLANFYLLIN T2,316259,318478
+Llangaffo,Llangaffo,Primary,"[33,11]",LLANGAFFO T1,244502,368122
+Llangefni,Llangefni,Primary,"[33,11]",LLANGEFNI T1,246052,375521
+Llangefni Ind Est,Llangefni Ind Est,Primary,"[33,11]",LLANGEFNI IND EST T1 / LLANGEFNI IND EST T2,246257,374824
+Llangollen,Llangollen,Primary,"[33,11]",LLANGOLLEN T1 / LLANGOLLEN T2,322039,341559
+Llanidloes,Llanidloes,Primary,"[33,11]",LLANIDLOES T1 / LLANIDLOES T2,295751,285281
+Llanrwst,Llanrwst,Primary,"[33,11]",LLANRWST T1,280830,361045
+Llansannan,Llansannan,Primary,"[33,11]",LLANSANNAN T1,294148,365818
+Llansilin,Llansilin,Primary,"[33,11]",LLANSILIN T1,321406,328695
+Llay,Llay,Primary,"[33,11]",LLAY T1,332706,356340
+Llynclys,Llynclys,Primary,"[33,11]",LLYNCLYS T1,328463,323968
+Llysfaen Rd,Llysfaen Rd,Primary,"[33,11]",LLYSFAEN RD T1,287373,378182
+Lord St,Lord St,Primary,"[33,11]",LORD ST T1,334092,417608
+Lostock (BSP),Lostock,BSP,"[132,33]",LOSTOCK GT2,369203,374496
+Lostock (Primary),Lostock,Primary,"[33,11]",LOSTOCK T1,369203,374496
+Lostock Triangle,Lostock Triangle,Primary,"[33,11]",LOSTOCK TRIANGLE T1,369406,374967
+Lower Bebington,Lower Bebington,Primary,"[33,11]",LOWER BEBINGTON T1,332574,384359
+Lucas (Fazakerley),Lucas (Fazakerley),Primary,"[33,11]",LUCAS (FAZAKERLEY) T1,337584,395684
+Lugsdale,Lugsdale,Primary,"[33,11]",LUGSDALE T1 / LUGSDALE T2,351947,385714
+Lymm,Lymm,Primary,"[33,11]",LYMM T1,367329,387163
+Lyndene Rd,Lyndene Rd,Primary,"[33,11]",LYNDENE RD T1,342170,388950
+Machynlleth,Machynlleth,Primary,"[33,11]",MACHYNLLETH T1 / MACHYNLLETH T2,275966,300800
+Mackamax,Mackamax,Primary,"[33,11]",MACKAMAX T1,353995,383513
+Maelor Creamery,Maelor Creamery,Primary,"[33,11]",MAELOR CREAMERY T1,338629,346681
+Maentwrog (BSP),Maentwrog,BSP,"[132,33]",MAENTWROG GT1 / MAENTWROG GT2,265438,339463
+Maentwrog (Primary),Maentwrog,Primary,"[33,11]",MAENTWROG T1,265438,339463
+Maes-Y-Clawdd,Maes-Y-Clawdd,Primary,"[33,11]",MAES-Y-CLAWDD T1,330429,328001
+Maghull,Maghull,Primary,"[33,11]",MAGHULL T1 / MAGHULL T2,337529,401571
+Mannings La,Mannings La,Primary,"[33,11]",MANNINGS LA T1,342397,368119
+Manod,Manod,Primary,"[33,11]",MANOD T1,270464,343037
+Manor Pk,Manor Pk,Primary,"[33,11]",MANOR PK T1,355349,383779
+Marchwiel (BSP),Marchwiel,BSP,"[132,33]",MARCHWIEL GT1 / MARCHWIEL GT2,338663,349852
+Marchwiel (Primary),Marchwiel,Primary,"[33,11]",MARCHWIEL T1,338663,349852
+Market St,Market St,Primary,"[33,11]",MARKET ST T1,333588,417047
+Marled Hey,Marled Hey,Primary,"[33,11]",MARLED HEY T1,342095,393669
+Marsh Brows,Marsh Brows,Primary,"[33,11]",MARSH BROWS T1,329199,406986
+Marshside,Marshside,Primary,"[33,11]",MARSHSIDE T1,335727,419165
+Mather Ave,Mather Ave,Primary,"[33,11]",MATHER AVE T1,339791,387500
+Mbna,Mbna,Primary,"[33,11]",MBNA T1,340261,362905
+Mdhb Brunswick Dock,Mdhb Brunswick Dock,Primary,"[33,11]",MDHB BRUNSWICK DOCK T1,334790,388612
+Mdhb Egerton Dock,Mdhb Egerton Dock,Primary,"[33,6.6]",MDHB EGERTON DOCK T1 / MDHB EGERTON DOCK T2,332150,389606
+Medeva,Medeva,Primary,"[33,11]",MEDEVA T1,343780,383957
+Meols,Meols,Primary,"[33,11]",MEOLS T1,323274,389730
+Mere,Mere,Primary,"[33,11]",MERE T1,372864,381454
+Meres Edge,Meres Edge,Primary,"[33,11]",MERES EDGE T1 / MERES EDGE T2,348295,374883
+Mersey Bridge,Mersey Bridge,Primary,"[33,11]",MERSEY BRIDGE T1,350927,384901
+Mersey Rd,Mersey Rd,Primary,"[33,11]",MERSEY RD T1,351309,383240
+Middlemass Hey,Middlemass Hey,Primary,"[33,11]",MIDDLEMASS HEY T1,344310,388201
+Middlewich,Middlewich,Primary,"[33,11]",MIDDLEWICH T1,371665,366742
+Midland Bank,Midland Bank,Primary,"[33,11]",MIDLAND BANK T1,335818,397689
+Midland Rollmakers,Midland Rollmakers,Primary,"[33,11]",MIDLAND ROLLMAKERS T1A,371382,354173
+Midpoint Pochin Way,Midpoint Pochin Way,Primary,"[33,11]",MIDPOINT POCHIN WAY T1,371678,365563
+Milford,Milford,Primary,"[33,11]",MILFORD T1,309387,290496
+Mill La (Wavertree),Mill La (Wavertree),Primary,"[33,11]",MILL LA (WAVERTREE) T1,339252,389576
+Minffordd,Minffordd,Primary,"[33,11]",MINFFORDD T1,257799,370925
+Mixalloy,Mixalloy,Primary,"[33,11]",MIXALLOY T1,333632,364683
+Mmb Ellesmere,Mmb Ellesmere,Primary,"[33,11]",MMB ELLESMERE T1,339920,334493
+Mobberley,Mobberley,Primary,"[33,11]",MOBBERLEY T1,377772,379893
+Mobil Oil (Wallasey),Mobil Oil (Wallasey),Primary,"[33,6.6]",MOBIL OIL (WALLASEY) T1,329809,390475
+Mochdre,Mochdre,Primary,"[33,11]",MOCHDRE T1,309557,290114
+Mona,Mona,Primary,"[33,11]",MONA T1,241851,375291
+Monsanto,Monsanto,Primary,"[33,11]",MONSANTO T1,327450,342253
+Moore,Moore,BSP,"[132,33]",MOORE GT1,355784,383229
+Morda,Morda,Primary,"[33,11]",MORDA T1,329066,328343
+Morgan Refractories,Morgan Refractories,Primary,"[33,11]",MORGAN REFRACTORIES T1,328978,378514
+Morganite Ceramics,Morganite Ceramics,Primary,"[33,11]",MORGANITE CERAMICS T1,335589,381791
+Morrisons,Morrisons,Primary,"[33,11]",MORRISONS T1,368529,372536
+Mossley Hill,Mossley Hill,Primary,"[33,11]",MOSSLEY HILL T1,338818,386856
+Mullards Balmoral Dv,Mullards Balmoral Dv,Primary,"[33,11]",MULLARDS BALMORAL DV T1,337070,419325
+Murdishaw,Murdishaw,Primary,"[33,11]",MURDISHAW T1,355883,381048
+Nant Hall,Nant Hall,Primary,"[33,11]",NANT HALL T1,307703,383197
+Nant-Y-Gamar,Nant-Y-Gamar,Primary,"[33,11]",NANT-Y-GAMAR T1,280112,381688
+Nantwich,Nantwich,Primary,"[33,11]",NANTWICH T1,365736,352374
+Naylors Rd,Naylors Rd,Primary,"[33,11]",NAYLORS RD T1,343635,388532
+Ncb Sutton Manor,Ncb Sutton Manor,Primary,"[33,11]",NCB SUTTON MANOR T2,351705,390668
+Neston,Neston,Primary,"[33,11]",NESTON T1,329760,377256
+Netherton,Netherton,Primary,"[33,11]",NETHERTON T1,335795,399959
+Nevill St,Nevill St,Primary,"[33,11]",NEVILL ST T1,333430,417528
+New Brighton,New Brighton,Primary,"[33,11]",NEW BRIGHTON T1,330980,393751
+New Ferry,New Ferry,Primary,"[33,11]",NEW FERRY T1,333626,385290
+Newhall,Newhall,Primary,"[33,11]",NEWHALL T1 / NEWHALL T2,360508,344938
+News International,News International,Primary,"[33,11]",NEWS INTERNATIONAL T1 / NEWS INTERNATIONAL T2,343335,396825
+Newtown,Newtown,BSP,"[132,33]",NEWTOWN GT2,312025,291816
+Newtown Chester,Newtown Chester,Primary,"[33,11]",NEWTOWN CHESTER T1,340586,367006
+Norris Green,Norris Green,Primary,"[33,11]",NORRIS GREEN T1,338271,394440
+North Rd,North Rd,Primary,"[33,11]",NORTH RD T1,258665,281902
+North Wales Paper,North Wales Paper,Primary,"[33,11]",NORTH WALES PAPER T1 / NORTH WALES PAPER T2,326191,371569
+North Western Mills,North Western Mills,Primary,"[33,11]",NORTH WESTERN MILLS T1,370716,353721
+Northgate Terrace,Northgate Terrace,Primary,"[33,11]",NORTHGATE TERRACE T1,340436,366708
+Northwich Town,Northwich Town,Primary,"[33,11]",NORTHWICH TOWN T1,365945,374078
+Northwood,Northwood,Primary,"[33,11]",NORTHWOOD T1,342034,398977
+Norton Chains,Norton Chains,Primary,"[33,11]",NORTON CHAINS T1,356175,383771
+Nwwa Sandon Dock,Nwwa Sandon Dock,Primary,"[33,11]",NWWA SANDON DOCK T1 / NWWA SANDON DOCK T2,333745,392832
+Ocean Plaza,Ocean Plaza,Primary,"[33,11]",OCEAN PLAZA T1,333198,417943
+Old Haymarket,Old Haymarket,Primary,"[33,11]",OLD HAYMARKET T1,334733,390749
+Old Mill,Old Mill,Primary,"[33,11]",OLD MILL T1,285585,378136
+Old Roan,Old Roan,Primary,"[33,11]",OLD ROAN T1,337079,399174
+Oldham Place,Oldham Place,Primary,"[33,11]",OLDHAM PLACE T1 / OLDHAM PLACE T2,335308,390040
+Omega,Omega,Primary,"[33,11]",OMEGA T1 / OMEGA T2,357220,390415
+Optical Fibres,Optical Fibres,Primary,"[33,11]",OPTICAL FIBRES T1,332557,370918
+Orford,Orford,Primary,"[33,11]",ORFORD T1,361989,390641
+Orion Boulevard,Orion Boulevard,Primary,"[33,11]",ORION BOULEVARD T1,356002,390270
+Orrell Mount,Orrell Mount,Primary,"[33,11]",ORRELL MOUNT T1,334175,397032
+Oswestry (BSP),Oswestry,BSP,"[132,33]",OSWESTRY GT5 / OSWESTRY GT8,330310,330545
+Oswestry (Primary),Oswestry,Primary,"[33,11]",OSWESTRY T1 / OSWESTRY T2,330310,330545
+Otis Elevator,Otis Elevator,Primary,"[33,11]",OTIS ELEVATOR T1,342205,397194
+Over,Over,Primary,"[33,11]",OVER T1,364191,366159
+Overton,Overton,Primary,"[33,11]",OVERTON T1,338740,340583
+Owen St,Owen St,Primary,"[33,11]",OWEN ST T1,360361,389130
+Oxton,Oxton,Primary,"[33,11]",OXTON T1,330062,387800
+Pacific Rd,Pacific Rd,Primary,"[33,11]",PACIFIC RD T1,333628,395438
+Padgate,Padgate,Primary,"[33,11]",PADGATE T1,363080,389965
+Palco,Palco,Primary,"[33,11]",PALCO T1,342270,396548
+Pandy,Pandy,Primary,"[33,11]",PANDY T1 / PANDY T2,333703,353400
+Paradise St (BSP),Paradise St,BSP,"[132,33]",PARADISE ST GT1,334582,389917
+Paradise St (Primary),Paradise St,Primary,"[33,6.3]",PARADISE ST T1,334582,389917
+Parc Bryn Cegin,Parc Bryn Cegin,Primary,"[33,11]",PARC BRYN CEGIN T1 / PARC BRYN CEGIN T2,258875,370481
+Parc Cybi,Parc Cybi,Primary,"[33,11]",PARC CYBI T1 / PARC CYBI T2,225624,380835
+Parc Menai,Parc Menai,Primary,"[33,11]",PARC MENAI T1,254177,370055
+Parc-Y-Llyn,Parc-Y-Llyn,Primary,"[33,11]",PARC-Y-LLYN T1 / PARC-Y-LLYN T2,259444,280845
+Peblic Mills,Peblic Mills,Primary,"[33,11]",PEBLIC MILLS T1,249082,361941
+Pen-Y-Groes,Pen-Y-Groes,Primary,"[33,11]",PEN-Y-GROES T1,245853,353549
+Penketh,Penketh,Primary,"[33,11]",PENKETH T1,356548,388129
+Penmaenmawr,Penmaenmawr,Primary,"[33,11]",PENMAENMAWR T1,271717,375907
+Pensarn,Pensarn,Primary,"[33,11]",PENSARN T1,294670,378516
+Pentraeth,Pentraeth,Primary,"[33,11]",PENTRAETH T1,250993,378503
+Percival La (BSP),Percival La,BSP,"[132,33]",PERCIVAL LA GT1,349785,381987
+Percival La (Primary),Percival La,Primary,"[33,11]",PERCIVAL LA T4,349758,381976
+Picow Farm Rd,Picow Farm Rd,Primary,"[33,11]",PICOW FARM RD T1,350805,382711
+Pilk Sullivan,Pilk Sullivan,Primary,"[33,11]",PILK SULLIVAN T1 / PILK SULLIVAN T2,352681,385206
+Pilkingtons,Pilkingtons,Primary,"[33,11]",PILKINGTONS T1 / PILKINGTONS T2,301879,374033
+Pilkingtons Ho,Pilkingtons Ho,Primary,"[33,11]",PILKINGTONS HO T1,349971,394524
+Pilkingtons Queensferry,Pilkingtons Queensferry,Primary,"[33,11]",PILKINGTONS QUEENSFERRY T1,332480,367804
+Pinfold La,Pinfold La,Primary,"[33,6.6]",PINFOLD LA T1,331267,411128
+Pipers Ash,Pipers Ash,Primary,"[33,11]",PIPERS ASH T1,343119,367554
+Pitt St,Pitt St,Primary,"[33,11]",PITT ST T1,351216,384509
+Plessey (Edge La),Plessey (Edge La),Primary,"[33,11]",PLESSEY (EDGE LA) T1,338250,390758
+Plymyard,Plymyard,Primary,"[33,11]",PLYMYARD T1 / PLYMYARD T2,335577,380468
+Point Of Ayr Colliery,Point Of Ayr Colliery,Primary,"[33,11]",POINT OF AYR COLLIERY T1,312563,383473
+Ponterwyl,Ponterwyl,Primary,"[33,11]",PONTERWYL T1,324102,364024
+Pool La,Pool La,Primary,"[33,11]",POOL LA T1,334534,384076
+Porthmadog,Porthmadog,Primary,"[33,11]",PORTHMADOG T1 / PORTHMADOG T2,256637,339533
+Poulton,Poulton,Primary,"[33,11]",POULTON T1,330660,390462
+Prees,Prees,Primary,"[33,11]",PREES T1,354763,333552
+Prenton Grid,Prenton Grid,BSP,"[132,33]",PRENTON GRID GT1 / PRENTON GRID GT3,329028,386736
+Prenton Local,Prenton Local,Primary,"[33,11]",PRENTON LOCAL T1,329090,386435
+Prescot,Prescot,BSP,"[132,33]",PRESCOT GT1A / PRESCOT GT1B,346798,392050
+Prestatyn,Prestatyn,Primary,"[33,11]",PRESTATYN T1,306432,382911
+Primrose Hall,Primrose Hall,Primary,"[33,11]",PRIMROSE HALL T1,374905,366791
+Pwllheli,Pwllheli,Primary,"[33,11]",PWLLHELI T1,237518,335742
+Queensferry,Queensferry,Primary,"[33,11]",QUEENSFERRY T1,332328,367984
+Radbroke Hall,Radbroke Hall,Primary,"[33,11]",RADBROKE HALL T1,376928,374680
+Radway Green (BSP),Radway Green,BSP,"[132,33]",RADWAY GREEN GT1 / RADWAY GREEN GT2,377558,354151
+Radway Green (Primary),Radway Green,Primary,"[33,11]",RADWAY GREEN T1,377558,354151
+Raf Sealand,Raf Sealand,Primary,"[33,11]",RAF SEALAND T1,333498,369948
+Rainford,Rainford,Primary,"[33,11]",RAINFORD T1,347951,400532
+Rainhill Local,Rainhill Local,Primary,"[33,11]",RAINHILL LOCAL T1,349720,390911
+Raven Square,Raven Square,Primary,"[33,11]",RAVEN SQUARE T1,321473,307410
+Ravenhead G1A1,Ravenhead G1A1,BSP,"[132,33]",RAVENHEAD G1A1,350821,394560
+Ravenhead G1A2,Ravenhead G1A2,BSP,"[132,33]",RAVENHEAD G1A2,350821,394560
+Ravenhead Retail Pk,Ravenhead Retail Pk,Primary,"[33,11]",RAVENHEAD RETAIL PK T1,351154,394612
+Reform St,Reform St,Primary,"[33,11]",REFORM ST T1,278194,382282
+Regent Rd,Regent Rd,Primary,"[33,6.3]",REGENT RD T1,333810,393666
+Rhm Foods Ltd,Rhm Foods Ltd,Primary,"[33,11]",RHM FOODS LTD T1,371938,364349
+Rhos-On-Sea,Rhos-On-Sea,Primary,"[33,11]",RHOS-ON-SEA T1,283533,380979
+Rhoslan,Rhoslan,Primary,"[33,11]",RHOSLAN T1,248132,340751
+Rhosnesni,Rhosnesni,Primary,"[33,11]",RHOSNESNI T1,334738,351673
+Rhuddlan,Rhuddlan,Primary,"[33,11]",RHUDDLAN T1,302174,377365
+Rhyd Broughton La,Rhyd Broughton La,Primary,"[33,11]",RHYD BROUGHTON LA T1,332124,350741
+Rhyd-Y-Foel,Rhyd-Y-Foel,Primary,"[33,11]",RHYD-Y-FOEL T1,291146,375779
+Rhyd-Y-Goleu,Rhyd-Y-Goleu,Primary,"[33,11]",RHYD-Y-GOLEU T1,323136,365119
+Rhydlydan (BSP),Rhydlydan,BSP,"[132,33]",RHYDLYDAN GT1,272362,281071
+Rhydlydan (Primary),Rhydlydan,Primary,"[33,11]",RHYDLYDAN T2,272356,281082
+Rhyl,Rhyl,BSP,"[132,33]",RHYL GT1,301146,380213
+Ringway,Ringway,Primary,"[33,11]",RINGWAY T1 / RINGWAY T2,380007,385346
+Rivals,Rivals,Primary,"[33,11]",RIVALS T1,238383,345656
+Robbins Bridge,Robbins Bridge,Primary,"[33,11]",ROBBINS BRIDGE T1,338572,404261
+Rock Ferry (BSP),Rock Ferry,BSP,"[132,33]",ROCK FERRY GT1 / ROCK FERRY GT2,333240,385752
+Rock Ferry (Primary),Rock Ferry,Primary,"[33,11]",ROCK FERRY T1,333240,385752
+Rodney St,Rodney St,Primary,"[33,11]",RODNEY ST T1,360717,388849
+Rolls Royce,Rolls Royce,Primary,"[33,11]",ROLLS ROYCE T1 / ROLLS ROYCE T2 / ROLLS ROYCE T3,368665,356604
+Ropewalks,Ropewalks,Primary,"[33,11]",ROPEWALKS T1,334872,389779
+Rossett,Rossett,Primary,"[33,11]",ROSSETT T1,336711,356909
+Ruabon,Ruabon,Primary,"[33,11]",RUABON T1,329112,343786
+Runcorn Central,Runcorn Central,Primary,"[33,11]",RUNCORN CENTRAL T1,353809,381435
+Ruthin,Ruthin,Primary,"[33,11]",RUTHIN T1,313087,359138
+Rylands Eldon St,Rylands Eldon St,Primary,"[33,6]",RYLANDS ELDON ST T1 / RYLANDS ELDON ST T2,361253,388466
+Safeway,Safeway,Primary,"[33,11]",SAFEWAY T1,365411,389569
+Saltney,Saltney,BSP,"[132,33]",SALTNEY GT1,337163,365314
+Saltney G2A,Saltney G2A,BSP,"[132,33]",SALTNEY G2A,337163,365314
+Saltney G2B,Saltney G2B,BSP,"[132,33]",SALTNEY G2B,337163,365314
+Saltney Grid,Saltney Grid,Primary,"[33,11]",SALTNEY GRID T1,337163,365314
+Sandbach,Sandbach,Primary,"[33,11]",SANDBACH T1,375548,361970
+Sandhills La,Sandhills La,Primary,"[33,6.3]",SANDHILLS LA T1,334174,393105
+Sankey Bridges,Sankey Bridges,BSP,"[132,33]",SANKEY BRIDGES GT1 / SANKEY BRIDGES GT3,358610,387465
+Saughall Massie,Saughall Massie,Primary,"[33,11]",SAUGHALL MASSIE T1,325241,389220
+Scarisbrick Ave,Scarisbrick Ave,Primary,"[33,11]",SCARISBRICK AVE T1,333699,397184
+Seaview Rd,Seaview Rd,Primary,"[33,11]",SEAVIEW RD T2,330251,392493
+Seeds La,Seeds La,Primary,"[33,11]",SEEDS LA T1,337419,397267
+Shawbury,Shawbury,Primary,"[33,11]",SHAWBURY T1,354317,322665
+Sheil Pk,Sheil Pk,Primary,"[33,6.3]",SHEIL PK T1,337103,391974
+Shell Tranmere,Shell Tranmere,Primary,"[33,11]",SHELL TRANMERE T1,333185,387054
+Sherdley Rd,Sherdley Rd,Primary,"[33,6.6]",SHERDLEY RD T1,351821,394260
+Shotwick,Shotwick,Primary,"[33,11]",SHOTWICK T1,331400,371691
+Simonswood,Simonswood,BSP,"[132,33]",SIMONSWOOD GT1,342979,399711
+Singleton Ave,Singleton Ave,Primary,"[33,11]",SINGLETON AVE T1 / SINGLETON AVE T2,330998,386991
+Sixth Ave Grid,Sixth Ave Grid,BSP,"[132,33]",SIXTH AVE GRID GT1,332324,370499
+Smallwood,Smallwood,Primary,"[33,11]",SMALLWOOD T1,381857,360841
+Smfs Kingsmeadow,Smfs Kingsmeadow,Primary,"[33,11]",SMFS KINGSMEADOW T1,339990,363164
+Snowhill,Snowhill,Primary,"[33,11]",SNOWHILL T1,365013,352468
+Somerfield Distribution,Somerfield Distribution,Primary,"[33,11]",SOMERFIELD DISTRIBUTION T1,351008,392099
+Southdene,Southdene,Primary,"[33,11]",SOUTHDENE T1,341771,397556
+Southport (BSP),Southport,BSP,"[132,33]",SOUTHPORT GT1 / SOUTHPORT GT2,336514,416762
+Southport (Primary),Southport,Primary,"[33,11]",SOUTHPORT T1 / SOUTHPORT T2,336514,416762
+Southport Rd,Southport Rd,Primary,"[33,11]",SOUTHPORT RD T1,330552,408445
+Sparling St,Sparling St,BSP,"[132,33]",SPARLING ST GT1,334617,389549
+Speke,Speke,BSP,"[132,33]",SPEKE GT1A / SPEKE GT3,343612,384360
+Speke Hall Rd,Speke Hall Rd,Primary,"[33,11]",SPEKE HALL RD T1,342511,384696
+Speke Sky Pk,Speke Sky Pk,Primary,"[33,11]",SPEKE SKY PK T1,342858,383056
+Spital,Spital,Primary,"[33,11]",SPITAL T1,333050,383173
+St Asaph,St Asaph,BSP,"[132,33]",ST ASAPH GT2 / ST ASAPH GT4,302100,374234
+St Asaph Business Pk,St Asaph Business Pk,Primary,"[33,11]",ST ASAPH BUSINESS PK T1,301796,374569
+St Helens,St Helens,BSP,"[132,33]",ST HELENS GT2A / ST HELENS GT2B,353570,395778
+St Helens Linkway,St Helens Linkway,Primary,"[33,6.6]",ST HELENS LINKWAY T1,351890,394482
+St Helens Rd,St Helens Rd,Primary,"[33,11]",ST HELENS RD T1,248094,362039
+St Helens Wwtw,St Helens Wwtw,Primary,"[33,6.6]",ST HELENS WWTW T1,353570,395778
+St Ivel Foods,St Ivel Foods,Primary,"[33,11]",ST IVEL FOODS T1,342117,397084
+St James,St James,Primary,"[33,6.3]",ST JAMES T1 / ST JAMES T2,334954,388977
+Stapeley,Stapeley,Primary,"[33,11]",STAPELEY T1,367530,351149
+Station View,Station View,Primary,"[33,11]",STATION VIEW T1,341719,366703
+Stockton Heath,Stockton Heath,Primary,"[33,11]",STOCKTON HEATH T1,361380,386140
+Stone Manganese,Stone Manganese,Primary,"[33,11]",STONE MANGANESE T1,331326,390575
+Stonebridge La,Stonebridge La,Primary,"[33,11]",STONEBRIDGE LA T1 / STONEBRIDGE LA T2,339596,396226
+Stoneycroft,Stoneycroft,Primary,"[33,11]",STONEYCROFT T1,339391,392123
+Strawberry Roundabout,Strawberry Roundabout,Primary,"[33,11]",STRAWBERRY ROUNDABOUT T1,339343,373742
+Stretton Ind Est,Stretton Ind Est,Primary,"[33,11]",STRETTON IND EST T1,364716,383766
+Suburban Rd,Suburban Rd,Primary,"[33,6.3]",SUBURBAN RD T1 / SUBURBAN RD T2,337086,392709
+Sutton Hall Wwb,Sutton Hall Wwb,Primary,"[33,11]",SUTTON HALL WWB T1,337158,375540
+Synthite,Synthite,Primary,"[33,11]",SYNTHITE T1,323221,364951
+Taco Plastics,Taco Plastics,Primary,"[33,11]",TACO PLASTICS T1 / TACO PLASTICS T2,366924,367162
+Tarbock,Tarbock,Primary,"[33,11]",TARBOCK T1,346227,390104
+Tarporley,Tarporley,Primary,"[33,11]",TARPORLEY T1,355258,361973
+Tarvin,Tarvin,Primary,"[33,11]",TARVIN T1,349208,367251
+Tatton Rd,Tatton Rd,Primary,"[33,11]",TATTON RD T1,335939,396841
+Technology Campus,Technology Campus,Primary,"[33,6.6]",TECHNOLOGY CAMPUS T1,351883,395729
+Tetrapak,Tetrapak,Primary,"[33,11]",TETRAPAK T1,337610,348296
+Thingwall,Thingwall,Primary,"[33,11]",THINGWALL T1,333958,387950
+Tomular Place,Tomular Place,Primary,"[33,11]",TOMULAR PLACE T1,341213,366364
+Tower Wharf,Tower Wharf,Primary,"[33,11]",TOWER WHARF T1,340095,366745
+Tranmere,Tranmere,Primary,"[33,6.6]",TRANMERE T1,332410,387766
+Tryweryn,Tryweryn,Primary,"[33,11]",TRYWERYN T1,288128,340391
+Tulip,Tulip,Primary,"[33,11]",TULIP T1,336012,382553
+Tuttle St,Tuttle St,Primary,"[33,11]",TUTTLE ST T1,333603,350053
+Twyfords,Twyfords,Primary,"[33,11]",TWYFORDS T1,380985,355304
+Tywyn,Tywyn,Primary,"[33,11]",TYWYN T1,259165,300899
+U C Wales,U C Wales,Primary,"[33,11]",U C WALES T1,259926,281510
+Uml Lever Bromborough,Uml Lever Bromborough,Primary,"[33,11]",UML LEVER BROMBOROUGH T2,335880,383134
+Unilever Dunkirk,Unilever Dunkirk,Primary,"[33,11]",UNILEVER DUNKIRK T1,338118,372456
+Unilever Research,Unilever Research,Primary,"[33,11]",UNILEVER RESEARCH T1,333535,383567
+United Peripherals,United Peripherals,Primary,"[33,11]",UNITED PERIPHERALS T1,366659,367420
+Upton,Upton,Primary,"[33,11]",UPTON T1,327026,388080
+Upton Heath,Upton Heath,Primary,"[33,11]",UPTON HEATH T1,341660,369541
+Usac,Usac,Primary,"[33,11]",USAC T1,352753,385817
+Van Leer No 1,Van Leer No 1,Primary,"[33,6.6]",VAN LEER NO 1 T1,341140,376635
+Vauxhall North Rd,Vauxhall North Rd,Primary,"[33,11]",VAUXHALL NORTH RD T1,337907,379290
+Waenfawr,Waenfawr,Primary,"[33,11]",WAENFAWR T1,252790,360790
+Walbro,Walbro,Primary,"[33,11]",WALBRO T1,332178,371469
+Wallasey (BSP),Wallasey,BSP,"[132,33]",WALLASEY GT1 / WALLASEY GT2,329919,391208
+Wallasey (Primary),Wallasey,Primary,"[33,11]",WALLASEY T1,329919,391208
+Wallasey Village,Wallasey Village,Primary,"[33,11]",WALLASEY VILLAGE T1,329011,392701
+Walton,Walton,Primary,"[33,6.3]",WALTON T1 / WALTON T2,335787,394918
+Wango La,Wango La,Primary,"[33,11]",WANGO LA T1,338858,398205
+Wapping,Wapping,Primary,"[33,11]",WAPPING T1,334458,389173
+Warrington,Warrington,BSP,"[132,33]",WARRINGTON GT3 / WARRINGTON GT5,362287,388091
+Warrington Central,Warrington Central,Primary,"[33,11]",WARRINGTON CENTRAL T1,360507,388383
+Washington St,Washington St,Primary,"[33,11]",WASHINGTON ST T1,334075,395565
+Waterloo,Waterloo,Primary,"[33,11]",WATERLOO T1 / WATERLOO T2,331854,398145
+Watery La,Watery La,Primary,"[33,6.6]",WATERY LA T1 / WATERY LA T2,353554,394132
+Wavertree (BSP),Wavertree,BSP,"[132,33]",WAVERTREE GT1A / WAVERTREE GT2,338500,389002
+Wavertree (Primary),Wavertree,Primary,"[33,11]",WAVERTREE T1,339019,388489
+Wavertree Vale,Wavertree Vale,Primary,"[33,6.3]",WAVERTREE VALE T1,337981,389515
+Wcb Plastics,Wcb Plastics,Primary,"[33,11]",WCB PLASTICS T1,367107,366605
+Weaver Ind Est,Weaver Ind Est,Primary,"[33,11]",WEAVER IND EST T1,340188,383656
+Welshpool,Welshpool,BSP,"[132,33]",WELSHPOOL GT1,324183,306766
+Welshpool Grid,Welshpool Grid,Primary,"[33,11]",WELSHPOOL GRID T1,324109,306778
+Wem,Wem,Primary,"[33,11]",WEM T1,352369,329537
+Wem East,Wem East,Primary,"[33,11]",WEM EAST T1,352369,329537
+Wervin,Wervin,Primary,"[33,11]",WERVIN T1,342235,370735
+West Derby,West Derby,Primary,"[33,11]",WEST DERBY T1,339513,392855
+West Felton,West Felton,Primary,"[33,11]",WEST FELTON T1,334462,326342
+West Kirby South,West Kirby South,Primary,"[33,11]",WEST KIRBY SOUTH T1,321797,386060
+Westbourne Ave,Westbourne Ave,Primary,"[33,11]",WESTBOURNE AVE T1,300058,380737
+Westbrook,Westbrook,Primary,"[33,11]",WESTBROOK T1,358189,390217
+Weston,Weston,Primary,"[33,11]",WESTON T1,373552,352959
+Westvale,Westvale,Primary,"[33,11]",WESTVALE T1,340481,398462
+Wharton,Wharton,Primary,"[33,11]",WHARTON T1,367036,366928
+Wharton Pk,Wharton Pk,Primary,"[33,11]",WHARTON PK T1,365702,367182
+Wheelock,Wheelock,Primary,"[33,11]",WHEELOCK T1,375476,359679
+Whiston,Whiston,Primary,"[33,11]",WHISTON T1,346767,390799
+Whiston Hosp,Whiston Hosp,Primary,"[33,11]",WHISTON HOSP T1,348154,391818
+Whitby,Whitby,Primary,"[33,11]",WHITBY T1,339452,375543
+Whitchurch (BSP),Whitchurch,BSP,"[132,33]",WHITCHURCH GT1 / WHITCHURCH GT2,352601,342802
+Whitchurch (Primary),Whitchurch,Primary,"[33,11]",WHITCHURCH T1,352601,342802
+Whitegate,Whitegate,Primary,"[33,11]",WHITEGATE T1,334952,349656
+Whiteleggs La,Whiteleggs La,Primary,"[33,11]",WHITELEGGS LA T1,369579,386258
+Wibp Hardknott Rd,Wibp Hardknott Rd,Primary,"[33,11]",WIBP HARDKNOTT RD T1,335419,382050
+Widnes,Widnes,BSP,"[132,33]",WIDNES GT1 / WIDNES GT2,350903,385113
+Widnes Rd,Widnes Rd,Primary,"[33,11]",WIDNES RD T1,356037,387555
+Wie Central,Wie Central,Primary,"[33,11]",WIE CENTRAL T1,338036,350104
+Wilson Rd,Wilson Rd,Primary,"[33,11]",WILSON RD T1,345311,390203
+Wimpeys Pant Quarry,Wimpeys Pant Quarry,Primary,"[33,11]",WIMPEYS PANT QUARRY T1 / WIMPEYS PANT QUARRY T2,319837,370481
+Wincham,Wincham,Primary,"[33,11]",WINCHAM T1,367722,375412
+Windle,Windle,BSP,"[132,33]",WINDLE GT1,350966,397029
+Windlehurst,Windlehurst,Primary,"[33,6.6]",WINDLEHURST T1 / WINDLEHURST T2,350265,396669
+Winnington,Winnington,Primary,"[33,11]",WINNINGTON T1,363984,374170
+Winsford,Winsford,BSP,"[132,33]",WINSFORD GT1 / WINSFORD GT2,366401,368746
+Winwick Quay,Winwick Quay,Primary,"[33,11]",WINWICK QUAY T1,360287,391423
+Wistaston Hall,Wistaston Hall,Primary,"[33,11]",WISTASTON HALL T1,368515,354213
+Woodchurch,Woodchurch,Primary,"[33,11]",WOODCHURCH T1,327661,386991
+Woodend Ave,Woodend Ave,Primary,"[33,11]",WOODEND AVE T1,343314,384463
+Woodfield Ave,Woodfield Ave,Primary,"[33,11]",WOODFIELD AVE T1,324745,372582
+Woodford Pk,Woodford Pk,Primary,"[33,11]",WOODFORD PK T1,362975,365356
+Woodside,Woodside,BSP,"[132,33]",WOODSIDE GT2,332750,389230
+Woodville St,Woodville St,Primary,"[33,6.6]",WOODVILLE ST T1,351651,395775
+Woolston,Woolston,Primary,"[33,11]",WOOLSTON T1 / WOOLSTON T2,364161,389600
+Woolton,Woolton,Primary,"[33,11]",WOOLTON T1,342609,386719
+Wrenbury Frith,Wrenbury Frith,Primary,"[33,11]",WRENBURY FRITH T1,357474,348624
+Wrexham,Wrexham,BSP,"[132,33]",WREXHAM GT1,335133,349119
+Yew Tree Rd,Yew Tree Rd,Primary,"[33,11]",YEW TREE RD T1,340616,387022
+Yockings Gate,Yockings Gate,Primary,"[33,11]",YOCKINGS GATE T1,354728,341986
+York Rd,York Rd,Primary,"[33,11]",YORK RD T1,332817,415823
+Ysbyty Glan Clwyd,Ysbyty Glan Clwyd,Primary,"[33,11]",YSBYTY GLAN CLWYD T1,300171,375960

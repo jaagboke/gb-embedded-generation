@@ -95,6 +95,16 @@ python -m gbeg.screening.prepare generation
 python -m gbeg.export          # data for the Generation register page
 ```
 
+To look up **SPEN substations by name**, download "Capacity Heatmaps Information Model SPM"
+as CSV from the SP Energy Networks Open Data Portal (free account needed), then:
+
+```bash
+python -m gbeg.screening.prepare spen-sites path/to/distribution-capacity-heatmaps-spm.csv
+```
+
+A site with no location whose name matches a substation is then placed at that
+substation, and the Screen page offers a substation picker.
+
 Coverage in this version: North West England, Cheshire, Merseyside and North Wales.
 
 ## Repository layout
@@ -112,7 +122,8 @@ docs/               method, decision log, schema, roadmap
 ## Data sources and licences
 
 ONS Rural Urban Classification 2021; OS Open UPRN; OS Code-Point Open; DESNZ Renewable
-Energy Planning Database; Electricity North West Embedded Capacity Register.
+Energy Planning Database; Electricity North West Embedded Capacity Register;
+SP Energy Networks Open Data Portal (CC BY 4.0), when the substation list is used.
 Contains OS data © Crown copyright and database right. Contains public sector information
 licensed under the Open Government Licence v3.0. Basemap © CARTO, © OpenStreetMap
 contributors.

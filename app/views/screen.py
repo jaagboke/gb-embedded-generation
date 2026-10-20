@@ -104,6 +104,20 @@ with st.expander("Add sites by hand", expanded=upload is None and not use_exampl
         num_rows="dynamic", hide_index=True, width="stretch", key="extra_sites",
         column_config={"Generator rating (kVA)": st.column_config.TextColumn(),
                        "Noise at 7 m dB(A)": st.column_config.TextColumn()})
+    if ref.spen_sites_loaded:
+        st.caption("Leave Location empty for an SPEN substation: its name is looked up in "
+                   "SP Energy Networks' substation list.")
+        picked = st.multiselect(
+            "Or pick SPEN substations", ref.spen_sites["label"].tolist(),
+            placeholder="Start typing a substation name", key="spen_picked")
+        if picked:
+            spen = ref.spen_sites.set_index("label")
+            # If the name alone would not find this exact substation, give its coordinates.
+            extra_sites = pd.concat([extra_sites, pd.DataFrame({
+                "Site name": picked,
+                "Location": [None if (ref.find_site(p) or (0, 0, ""))[2] == p else
+                             f"{spen.loc[p, 'e']:.0f}, {spen.loc[p, 'n']:.0f}"
+                             for p in picked]})], ignore_index=True)
 
 if upload is not None:
     raw, source_name = upload.getvalue(), upload.name

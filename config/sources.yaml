@@ -61,3 +61,13 @@ sources:
     licence: Open Government Licence v3.0
     refresh: quarterly
     phase: 2
+
+  spen_substations_spm:
+    name: Capacity Heatmaps Information Model SPM (substation names and locations)
+    publisher: SP Energy Networks
+    landing_page: https://spenergynetworks.opendatasoft.com/explore/assets/distribution-capacity-heatmaps-spm/
+    url: null              # rows need a portal login; export CSV by hand
+    verified: false
+    licence: CC BY 4.0
+    refresh: as published
+    notes: Used to find a site by substation name (prepare spen-sites).

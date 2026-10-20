@@ -4,6 +4,7 @@
     python -m gbeg.screening.prepare addresses  <OS Open UPRN .csv or .zip>
     python -m gbeg.screening.prepare postcodes  <OS Code-Point Open .zip or folder>
     python -m gbeg.screening.prepare generation [--db data/processed/gbeg.duckdb]
+    python -m gbeg.screening.prepare spen-sites <SPEN Open Data Portal substation CSV(s)>
 
 Each step clips to the region in config/screening.yaml and writes to app/data/reference.
 """
@@ -181,21 +182,106 @@ def prepare_generation(db: Path, out: Path = OUT, cfg: dict | None = None) -> in
     return len(df)
 
 
+# ---- SPEN substations (SP Energy Networks Open Data Portal) ----------------------------
+
+def _read_portal_csv(path: Path) -> pd.DataFrame:
+    """Portal exports are ',' or ';' separated, with a BOM and quoted multi-line cells."""
+    with open(path, encoding="utf-8-sig") as f:
+        first = f.readline()
+    sep = ";" if first.count(";") > first.count(",") else ","
+    return pd.read_csv(path, sep=sep, dtype=str, encoding="utf-8-sig")
+
+
+def _col(cols: dict[str, str], *names: str) -> str | None:
+    return next((cols[n] for n in names if n in cols), None)
+
+
+# "CREWE T1", "ABERYSTWYTH GT2", "WINSFORD SGT1A": the transformer, not the substation.
+_TRANSFORMER_TAG = re.compile(r"\s+(S?GT|T)\d+[A-Z]?$", flags=re.IGNORECASE)
+
+
+def prepare_spen_sites(paths: list[Path], out: Path = OUT, cfg: dict | None = None) -> int:
+    """SPEN substation names and locations, for finding a site by name.
+
+    Built for the portal's "Capacity Heatmaps Information Model SPM" CSV export, which has
+    one row per transformer ("CREWE T1", "CREWE T2"). Transformers are merged into one
+    substation per name and type, placed at their average position. The same name used for
+    different substations (Crewe primary and Crewe BSP) stays as separate entries.
+    """
+    from gbeg.transform.coords import from_latlon
+
+    cfg = cfg or load_config()
+    e0, n0, e1, n1 = _bbox(cfg)
+    frames = []
+    for path in paths:
+        df = _read_portal_csv(path)
+        cols = {" ".join(str(c).lower().split()): c for c in df.columns}
+        name_col = _col(cols, "site name (individual site)", "site_name", "name",
+                        "substation name", "substation")
+        if name_col is None:
+            raise KeyError(f"No substation name column in {path.name}: {list(df.columns)}")
+        lat_col = _col(cols, "latitude (individual site)", "lat", "latitude")
+        lon_col = _col(cols, "longitude (individual site)", "lon", "longitude")
+        if lat_col and lon_col:
+            lat = pd.to_numeric(df[lat_col], errors="coerce")
+            lon = pd.to_numeric(df[lon_col], errors="coerce")
+        else:
+            pair_col = _col(cols, "coordinates", "geo_point_2d")
+            if pair_col is None:
+                raise KeyError(f"No latitude/longitude columns in {path.name}")
+            parts = df[pair_col].fillna("").str.split(",", n=1, expand=True)
+            lat = pd.to_numeric(parts[0], errors="coerce")
+            lon = (pd.to_numeric(parts[1], errors="coerce") if parts.shape[1] > 1
+                   else pd.Series(np.nan, index=df.index))
+        type_col, volt_col = _col(cols, "type"), _col(cols, "voltage")
+        frames.append(pd.DataFrame({
+            "code": df[name_col].fillna("").str.strip(),
+            "type": df[type_col].fillna("") if type_col else "",
+            "voltage": df[volt_col].fillna("") if volt_col else "",
+            "lat": lat, "lon": lon,
+        }))
+    df = pd.concat(frames, ignore_index=True).dropna(subset=["lat", "lon"])
+    df = df[df["code"] != ""].copy()
+    df["base"] = df["code"].str.replace(_TRANSFORMER_TAG, "", regex=True).str.strip()
+    points = [from_latlon(a, b) for a, b in zip(df["lat"], df["lon"], strict=True)]
+    df["e"] = [p.easting for p in points]
+    df["n"] = [p.northing for p in points]
+    df = df[df["e"].between(e0, e1) & df["n"].between(n0, n1)]
+
+    sites = (df.groupby(["base", "type"], as_index=False)
+               .agg(voltage=("voltage", "first"), e=("e", "mean"), n=("n", "mean"),
+                    transformers=("code", lambda s: " / ".join(sorted(set(s))))))
+    sites["e"] = sites["e"].round().astype(int)
+    sites["n"] = sites["n"].round().astype(int)
+    sites["name"] = sites["base"].str.title()
+    # A label that is unique, for pick lists: "Crewe (Primary)" only when "Crewe" repeats.
+    repeated = sites["name"].duplicated(keep=False)
+    sites["label"] = sites["name"].where(~repeated, sites["name"] + " (" + sites["type"] + ")")
+    out.mkdir(parents=True, exist_ok=True)
+    sites = sites.sort_values("label")
+    sites[["label", "name", "type", "voltage", "transformers", "e", "n"]].to_csv(
+        out / "spen_sites.csv", index=False)
+    return len(sites)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("layer", choices=["ruc", "addresses", "postcodes", "generation"])
-    parser.add_argument("path", nargs="?", type=Path)
+    parser.add_argument("layer", choices=["ruc", "addresses", "postcodes", "generation",
+                                          "spen-sites"])
+    parser.add_argument("path", nargs="*", type=Path)
     parser.add_argument("--db", type=Path, default=Path("data/processed/gbeg.duckdb"))
     parser.add_argument("--out", type=Path, default=OUT)
     args = parser.parse_args()
     if args.layer == "generation":
         n = prepare_generation(args.db, args.out)
+    elif not args.path:
+        parser.error(f"{args.layer} needs the path to the downloaded file")
+    elif args.layer == "spen-sites":
+        n = prepare_spen_sites(args.path, args.out)
     else:
-        if args.path is None:
-            parser.error(f"{args.layer} needs the path to the downloaded file")
         n = {"ruc": prepare_ruc, "addresses": prepare_addresses,
-             "postcodes": prepare_postcodes}[args.layer](args.path, args.out)
+             "postcodes": prepare_postcodes}[args.layer](args.path[0], args.out)
     print(f"{args.layer}: {n:,} records written to {args.out}")
 
 

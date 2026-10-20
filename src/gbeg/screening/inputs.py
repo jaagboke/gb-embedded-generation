@@ -156,7 +156,8 @@ def _postcode(text: str, lookup) -> Located:
     return Located(loc.easting, loc.northing, loc.latitude, loc.longitude, "postcode")
 
 
-def locate_row(row: pd.Series, cols: ColumnMap, postcode_lookup=None) -> Located:
+def locate_row(row: pd.Series, cols: ColumnMap, postcode_lookup=None,
+               site_lookup=None) -> Located:
     """Try the most precise location first: coordinates, grid reference, then postcode."""
     def val(role):
         col = cols.get(role)
@@ -202,6 +203,19 @@ def locate_row(row: pd.Series, cols: ColumnMap, postcode_lookup=None) -> Located
                 return found
             if found.issue not in issues:
                 issues.append(found.issue)
+    # Last resort: the site name (or the Location text) may be a known SPEN substation.
+    if site_lookup is not None:
+        for text in (val("name"), val("location")):
+            found = site_lookup(str(text)) if text else None
+            if isinstance(found, str):   # the name fits several substations
+                issues.append(found)
+                break
+            if found:
+                loc = from_en(found[0], found[1])
+                return Located(loc.easting, loc.northing, loc.latitude, loc.longitude,
+                               f"SPEN substation ({found[2]})")
+        if val("name") and not issues:
+            issues.append("No location given, and the name is not an SPEN substation")
     return Located(issue="; ".join(issues) or "No location given")
 
 

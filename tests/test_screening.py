@@ -275,3 +275,64 @@ def test_typed_sites_screen_with_file(reference):
     result = screen(combined, reference, CFG, cols)
     assert result.results["Site"].tolist() == ["File site", "Typed site"]
     assert result.problems.empty
+
+
+# ---- SPEN substation lookup ------------------------------------------------------------
+def _spen_reference(reference, tmp_path):
+    """The shared reference data plus a small export laid out like the SPEN portal's
+    capacity heatmap CSV: one row per transformer."""
+    import shutil
+    folder = tmp_path / "ref"
+    shutil.copytree(reference.folder, folder)
+    from gbeg.transform.coords import from_en
+    town, field = from_en(351_000, 451_000), from_en(353_500, 451_500)
+    town2 = from_en(351_600, 451_600)
+    portal = tmp_path / "heatmap.csv"
+    pd.DataFrame({
+        "name": ["HOOLE RD T1 / HOOLE RD T2"] * 2 + ["FARMSIDE T1", "CREWE T1", "CREWE GT1",
+                                                    "EDINBURGH T1"],
+        "type": ["Primary", "Primary", "Primary", "Primary", "BSP", "Primary"],
+        "voltage": ["[33,11]"] * 4 + ["[132,33]", "[33,11]"],
+        "site name (individual site)": ["HOOLE RD T1", "HOOLE RD T2", "FARMSIDE T1",
+                                        "CREWE T1", "CREWE GT1", "EDINBURGH T1"],
+        "latitude (individual site)": [town.latitude, town.latitude + 0.0001, field.latitude,
+                                       town2.latitude, field.latitude, 55.95],
+        "longitude (individual site)": [town.longitude, town.longitude, field.longitude,
+                                        town2.longitude, field.longitude, -3.19],
+    }).to_csv(portal, index=False, encoding="utf-8-sig")
+    # Hoole Rd's two transformers merge; Crewe primary and BSP stay apart; Edinburgh clipped
+    assert prepare.prepare_spen_sites([portal], folder, CFG) == 4
+    return ReferenceData.load(folder)
+
+
+def test_site_key_ignores_substation_words():
+    from gbeg.screening.layers import site_key
+    assert site_key("HOOLE ROAD 33/11kV Primary S/S") == "hoole road"
+    assert site_key("Hoole Rd substation T1") == "hoole road"
+    assert site_key("BURLINGTON ST GT2") == site_key("Burlington Street")
+
+
+def test_spen_site_found_by_name(reference, tmp_path):
+    ref = _spen_reference(reference, tmp_path)
+    assert ref.spen_sites_loaded
+    assert set(ref.spen_sites["label"]) == {"Hoole Rd", "Farmside", "Crewe (Primary)",
+                                            "Crewe (BSP)"}
+    assert ref.find_site("Hoole Road Substation")[2] == "Hoole Rd"
+    assert ref.find_site("Farmsde")[2] == "Farmside"                 # close spelling
+    assert ref.find_site("Crewe") is None                            # two places
+    assert ref.find_site("Crewe primary")[2] == "Crewe (Primary)"
+    assert ref.find_site("Crewe (BSP)")[2] == "Crewe (BSP)"
+    assert ref.find_site("Somewhere else") is None
+
+    sites = pd.DataFrame({"Site name": ["Hoole Road primary", "Farmside", "Unknown", "Given",
+                                        "Crewe"],
+                          "Location": ["", "", "", "353500, 451500", ""]})
+    result = screen(sites, ref, CFG)
+    res = result.results.set_index("Site")
+    assert res.loc["Hoole Road primary", "Located by"] == "SPEN substation (Hoole Rd)"
+    assert res.loc["Hoole Road primary", "Setting"] == rules.URBAN
+    assert res.loc["Farmside", "Setting"] == rules.RURAL
+    assert res.loc["Given", "Located by"] == "easting/northing"   # a location still wins
+    problems = result.problems.set_index("Site")["Problem"]
+    assert "not an SPEN substation" in problems["Unknown"]
+    assert "more than one SPEN substation (Crewe (BSP), Crewe (Primary))" in problems["Crewe"]
