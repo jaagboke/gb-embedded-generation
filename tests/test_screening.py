@@ -250,3 +250,28 @@ def test_location_and_postcode_columns_only():
     assert [g.method for g in got[:3]] == ["postcode", "grid reference", "postcode"]
     assert got[0].easting == 371951 and got[2].easting == 358016
     assert "Nowhere Farm" in got[3].issue and "ZZ9 9ZZ not found" in got[3].issue
+
+
+def test_add_sites_fills_file_columns_and_adds_missing_ones():
+    from gbeg.screening.inputs import add_sites
+    sites = pd.DataFrame({"Name": ["A"], "Easting": ["383800"], "Northing": ["398000"],
+                          "kVA": ["500"]})
+    cols = detect_columns(sites)
+    extra = pd.DataFrame({"Site name": ["Typed", None, ""], "Location": ["SJ 838 980", None, ""],
+                          "Generator rating (kVA)": ["250", None, ""]})
+    combined, new_cols = add_sites(sites, cols, extra)
+    assert len(combined) == 2                      # blank rows are dropped
+    assert combined.loc[1, "Name"] == "Typed"      # goes into the file's name column
+    assert combined.loc[1, "kVA"] == "250"
+    assert new_cols.get("location") == "Location"  # file had none, so one is added
+    assert pd.isna(combined.loc[0, "Location"])
+
+
+def test_typed_sites_screen_with_file(reference):
+    from gbeg.screening.inputs import add_sites
+    sites = pd.DataFrame({"Site": ["File site"], "Easting": ["351000"], "Northing": ["451000"]})
+    extra = pd.DataFrame({"Site name": ["Typed site"], "Location": ["353000, 451000"]})
+    combined, cols = add_sites(sites, detect_columns(sites), extra)
+    result = screen(combined, reference, CFG, cols)
+    assert result.results["Site"].tolist() == ["File site", "Typed site"]
+    assert result.problems.empty

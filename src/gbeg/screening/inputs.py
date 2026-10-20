@@ -203,3 +203,47 @@ def locate_row(row: pd.Series, cols: ColumnMap, postcode_lookup=None) -> Located
             if found.issue not in issues:
                 issues.append(found.issue)
     return Located(issue="; ".join(issues) or "No location given")
+
+
+# Columns of the "add sites by hand" table, and the role each one fills.
+EXTRA_SITE_FIELDS: dict[str, str] = {
+    "Site name": "name",
+    "Location": "location",
+    "Generator rating (kVA)": "kva",
+    "Noise at 7 m dB(A)": "noise_7m",
+    "Operating period": "period",
+}
+
+
+def add_sites(sites: pd.DataFrame, cols: ColumnMap,
+              extra: pd.DataFrame) -> tuple[pd.DataFrame, ColumnMap]:
+    """Append typed-in sites (columns as in EXTRA_SITE_FIELDS) to an uploaded site list.
+
+    Each value goes into the file's column for that role. If the file has no column for a
+    role (often "location", when the file uses eastings and northings), a new column is
+    added; it stays empty for the file's own rows, so they are located as before.
+    """
+    extra = extra.reindex(columns=list(EXTRA_SITE_FIELDS)).astype(object)
+    extra = extra.where(extra.notna() & (extra.astype(str).apply(lambda s: s.str.strip()) != ""))
+    extra = extra.dropna(how="all")
+    if extra.empty:
+        return sites, cols
+
+    roles = dict(cols.roles)
+    sites = sites.copy()
+    rows = pd.DataFrame(index=range(len(extra)), columns=sites.columns, dtype=object)
+    for label, role in EXTRA_SITE_FIELDS.items():
+        values = extra[label].map(lambda v: None if pd.isna(v) else str(v).strip()).tolist()
+        if all(v is None for v in values):
+            continue
+        target = roles.get(role)
+        if target is None:
+            target = label
+            while target in sites.columns:
+                target += " (added)"
+            sites[target] = None
+            rows[target] = None
+            roles[role] = target
+        rows[target] = values
+    combined = pd.concat([sites, rows], ignore_index=True)
+    return combined, ColumnMap(roles)

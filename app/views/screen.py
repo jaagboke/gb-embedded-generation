@@ -13,7 +13,14 @@ import pydeck as pdk
 import streamlit as st
 
 from gbeg.screening import rules
-from gbeg.screening.inputs import ROLE_PATTERNS, ColumnMap, detect_columns, read_table
+from gbeg.screening.inputs import (
+    EXTRA_SITE_FIELDS,
+    ROLE_PATTERNS,
+    ColumnMap,
+    add_sites,
+    detect_columns,
+    read_table,
+)
 from gbeg.screening.layers import ReferenceData
 from gbeg.screening.report import to_excel
 from gbeg.screening.screen import screen
@@ -87,39 +94,68 @@ with right:
                        file_name=EXAMPLE_XLSX.name,
                        mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
+with st.expander("Add sites by hand", expanded=upload is None and not use_example):
+    st.write("Type a site name and its location (postcode, grid reference such as "
+             "SJ 838 980, easting and northing, or latitude and longitude). These sites are "
+             "screened together with any file you upload. Add a row with the + below "
+             "the table.")
+    extra_sites = st.data_editor(
+        pd.DataFrame({c: pd.Series(dtype="str") for c in EXTRA_SITE_FIELDS}),
+        num_rows="dynamic", hide_index=True, width="stretch", key="extra_sites",
+        column_config={"Generator rating (kVA)": st.column_config.TextColumn(),
+                       "Noise at 7 m dB(A)": st.column_config.TextColumn()})
+
 if upload is not None:
     raw, source_name = upload.getvalue(), upload.name
 elif use_example:
     raw, source_name = EXAMPLE.read_bytes(), EXAMPLE.name
 else:
-    st.info("Upload a CSV or Excel file of sites, or switch on the example sites.")
+    raw, source_name = None, None
+
+if raw is not None:
+    sites = read_table(raw, source_name)
+    if use_example:
+        source_name = "example sites (made up)"
+    # Column choices belong to one file: a new file starts again from automatic detection.
+    file_key = hashlib.md5(raw).hexdigest()[:10]
+else:
+    sites, file_key = pd.DataFrame(), "none"
+
+n_file = len(sites)
+if raw is not None:
+    st.caption(f"{n_file} rows read from {source_name}. Location can be a postcode, OS grid "
+               "reference, easting and northing, or latitude and longitude. If a Location "
+               "column holds site names or addresses, the Postcode column (or a postcode in "
+               "the address) is used instead.")
+
+columns = ColumnMap()
+if raw is not None:
+    detected = detect_columns(sites)
+    with st.expander("Check how your columns were read", expanded=False):
+        st.write("Change a column if it was matched wrongly. Leave a role empty if your file "
+                 "does not have it.")
+        options = ["—"] + list(sites.columns)
+        roles = {}
+        grid = st.columns(3)
+        for i, role in enumerate(ROLE_PATTERNS):
+            current = detected.get(role)
+            choice = grid[i % 3].selectbox(ROLE_LABELS[role], options,
+                                           index=options.index(current) if current else 0,
+                                           key=f"role_{role}_{file_key}")
+            if choice != "—":
+                roles[role] = choice
+        columns = ColumnMap(roles)
+
+# Sites typed in by hand go after the file's rows.
+sites, columns = add_sites(sites, columns, extra_sites)
+n_extra = len(sites) - n_file
+if sites.empty:
+    st.info("Upload a CSV or Excel file of sites, switch on the example sites, or add "
+            "sites by hand above.")
     st.stop()
-sites = read_table(raw, source_name)
-if use_example:
-    source_name = "example sites (made up)"
-# Column choices belong to one file: a new file starts again from automatic detection.
-file_key = hashlib.md5(raw).hexdigest()[:10]
-
-st.caption(f"{len(sites)} rows read from {source_name}. Location can be a postcode, OS grid "
-           "reference, easting and northing, or latitude and longitude. If a Location column "
-           "holds site names or addresses, the Postcode column (or a postcode in the "
-           "address) is used instead.")
-
-detected = detect_columns(sites)
-with st.expander("Check how your columns were read", expanded=False):
-    st.write("Change a column if it was matched wrongly. Leave a role empty if your file "
-             "does not have it.")
-    options = ["—"] + list(sites.columns)
-    roles = {}
-    grid = st.columns(3)
-    for i, role in enumerate(ROLE_PATTERNS):
-        current = detected.get(role)
-        choice = grid[i % 3].selectbox(ROLE_LABELS[role], options,
-                                       index=options.index(current) if current else 0,
-                                       key=f"role_{role}_{file_key}")
-        if choice != "—":
-            roles[role] = choice
-    columns = ColumnMap(roles)
+if n_extra:
+    st.caption(f"{n_extra} {'site' if n_extra == 1 else 'sites'} added by hand"
+               + (f", screened with the {n_file} from the file." if n_file else "."))
 
 with st.expander("Adjust the screening rules for this run", expanded=False):
     cfg = copy.deepcopy(base_cfg)
