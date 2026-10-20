@@ -11,7 +11,20 @@ from pathlib import Path
 import streamlit as st
 
 # Make the gbeg package importable without installing it (e.g. on Streamlit Community Cloud).
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+SRC = Path(__file__).resolve().parents[1] / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
+
+# Streamlit only reloads code inside app/, so after a deploy the server can keep running
+# the old gbeg package. When any file under src/ has changed, drop it and import afresh.
+_stamp = max(p.stat().st_mtime for p in SRC.rglob("*.py"))
+if getattr(sys.modules.get("gbeg"), "_source_stamp", _stamp) != _stamp:
+    for _name in [m for m in sys.modules if m == "gbeg" or m.startswith("gbeg.")]:
+        del sys.modules[_name]
+    st.cache_resource.clear()   # cached reference data was built by the old code
+import gbeg
+
+gbeg._source_stamp = _stamp
 
 st.set_page_config(page_title="Generator site screening", page_icon="⚡", layout="wide")
 
