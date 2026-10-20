@@ -45,6 +45,19 @@ def test_app_opens_on_screening_page():
     assert any("sites screened" in s.value for s in at.subheader)
 
 
+@pytest.mark.skipif(not (APP_DIR / "data" / "reference" / "spen_sites.csv").exists(),
+                    reason="SPEN substation list not prepared")
+def test_one_spen_substation_screens_and_maps():
+    """A single site used to crash the map (its 95% view of one point was empty)."""
+    st_testing = pytest.importorskip("streamlit.testing.v1")
+    at = st_testing.AppTest.from_file(str(APP), default_timeout=90).run()
+    at.toggle[0].set_value(False).run()
+    first = at.multiselect(key="spen_picked").options[0]
+    at.multiselect(key="spen_picked").set_value([first]).run()
+    assert not at.exception
+    assert any(s.value.startswith("1 site screened") for s in at.subheader)
+
+
 @pytest.mark.skipif(not DATA.exists(), reason="app dataset not exported")
 def test_register_page_runs_and_filters():
     st_testing = pytest.importorskip("streamlit.testing.v1")

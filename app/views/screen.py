@@ -196,7 +196,7 @@ res = result.results.copy()
 res["Setting shown"] = res["Setting"].fillna("Not assessed")
 
 # ---- Summary ----------------------------------------------------------------------------
-st.subheader(f"{len(res)} sites screened"
+st.subheader(f"{len(res)} {'site' if len(res) == 1 else 'sites'} screened"
              + (f", {len(result.problems)} could not be" if len(result.problems) else ""))
 if len(res):
     counts = res["Setting shown"].value_counts()
@@ -264,8 +264,14 @@ layers.append(pdk.Layer(
     radius_min_pixels=6, radius_max_pixels=14, stroked=True,
     get_line_color=[255, 255, 255], line_width_min_pixels=1.5))
 
-view = pdk.data_utils.compute_view(mapdf[["Longitude", "Latitude"]].values.tolist(), 0.95)
-view.zoom = min(view.zoom, 13)
+points = mapdf[["Longitude", "Latitude"]].values.tolist()
+if len({tuple(p) for p in points}) < 2:
+    # compute_view needs a spread of points (with one, its 95% subset is empty).
+    view = pdk.ViewState(longitude=points[0][0], latitude=points[0][1], zoom=14)
+else:
+    # Keep 95% of points in view (ignoring outliers), but never fewer than all of a few.
+    view = pdk.data_utils.compute_view(points, 0.95 if len(points) >= 20 else 1)
+    view.zoom = min(view.zoom, 13)
 event = st.pydeck_chart(
     pdk.Deck(layers=layers, map_provider="carto", map_style="light", initial_view_state=view,
              tooltip={"html": "<b>{Site}</b><br/>{setting_text}<br/>Nearest address: "
