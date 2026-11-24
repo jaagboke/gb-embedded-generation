@@ -128,6 +128,3 @@ Contains OS data © Crown copyright and database right. Contains public sector i
 licensed under the Open Government Licence v3.0. Basemap © CARTO, © OpenStreetMap
 contributors.
 
-## Author
-
-Jax, data engineer, energy sector.
